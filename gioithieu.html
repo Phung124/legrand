@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles1.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
+
+
+    <style>
+        @media only screen and (max-width: 900px) {
+            .navbar-custom {
+               /* Đảm bảo thanh điều hướng chiếm toàn bộ chiều rộng màn hình */
+               max-width: 800px !important;
+                justify-content: space-between; /* Đảm bảo thanh điều hướng không vượt quá chiều rộng của viewport */
+                padding: 0.5rem; /* Giảm padding cho phù hợp với màn hình nhỏ hơn */
+            }
+        }
+        
+        /* Responsive điều chỉnh cho màn hình rất nhỏ */
+        @media only screen and (max-width: 600px) {
+            .navbar-custom {
+                max-width: 530px !important;
+                justify-content: space-between;
+             /* Giảm padding để tiết kiệm không gian hơn */
+            }
+        }
+            .navbar-custom {
+                    width: 1440px;/* Adjust the background color as needed */
+                    padding: 0.5rem 1rem; /* Adjust padding for navbar */
+                    
+                }
+                .navbar-brand img {
+                    height: 40px; /* Adjust the logo height as needed */
+                }
+                .nav-link {
+                    color: white !important; /* Ensure the links are white */
+                    font-size: 1rem; /* Adjust font size */
+                    padding: 0.5rem 1rem; /* Adjust padding for links */
+                }
+                .search-container {
+                    position: relative;
+                }
+                .search-container input {
+                    border-radius: 0;
+                    width: 200px; /* Adjust the search input width */
+                    padding-right: 30px; /* Make space for the icon */
+                }
+                .search-container svg {
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: #aaa;
+                }
+                .navbar-toggler-icon {
+                    background-image: url('data:image/svg+xml,%3Csvg xmlns%3D"http://www.w3.org/2000/svg" viewBox%3D"0 0 30 30"%3E%3Cpath stroke%3D"rgba%280, 0, 0, 0.5%29" stroke-width%3D"2" linecap%3D"round" linejoin%3D"round" d%3D"M4 7h22M4 15h22M4 23h22"%3E%3C/path%3E%3C/svg%3E');
+                }
+                .navbar-nav {
+                    align-items: center;
+                }
+                .row-limit {
+                    max-height: 1300px; /* Adjust according to the approximate height of 4 rows */
+                    overflow: hidden;
+                }
+            .breadcrumb-item a{
+            text-decoration: none;
+            color: #666565;
+            }
+        
+            .page-link:hover {
+            background-color: #666565;
+            color:red;
+        }
+            .page-link{
+                padding-top: 0px;
+                color: black;
+            }
+         /* Change the arrow color to red */
+          .col-md-3{
+            margin-bottom: 20px;
+          }
+          .hidden {
+          display: none;
+        }
+        .col{
+        margin-bottom: 1rem;
+        flex: 1 0 25% ;
+        
+        }
+          
+          .bg-light{
+            background-color: #215F8B;
+          }
+          .card-img-top {
+                    max-width: 100%;
+                    height: 200px; 
+                    object-fit: contain; 
+                    transition: transform 0.9s ease;
+                }
+        
+        .card-img-top:hover{
+            transform: scale(1.1);
+        }
+          .card-img-overlay-bottom {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              top: auto;
+              padding: 10px;
+              width: 100%;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 0 0 0 0;
+          }
+          .card {
+                    position: relative;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
+                .slider-container-content {
+            display: flex;
+            flex-wrap: nowrap;
+            transition: transform 0.5s ease;
+        }
+        .slider-container-content1 {
+            display: flex;
+            flex-wrap: nowrap;
+            transition: transform 0.5s ease;
+        }
+                .footer {
+                    background-color: #2a6b8e;
+                    color: white;
+                    padding: 40px 0;
+                }
+                .footer a {
+                    color: #d1ecf1;
+                    text-decoration: none;
+                }
+                .footer a:hover {
+                    text-decoration: underline;
+                }
+                .footer .social-icons i {
+                    margin-right: 10px;
+                    font-size: 24px;
+                }
+                .footer .section-title {
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                    color: #fff;
+                    text-align: justify;
+                }
+                .footer .contact-info img {
+                    max-width: 100%;
+                    height: auto;
+                }
+                .footer .contact-info address, .footer .contact-info p {
+                    margin-bottom: 10px;
+                }
+                .footer-bottom {
+                    background-color: #25688d;
+                    padding: 10px 0;
+                    text-align: center;
+                    font-size: 14px;
+                }
+                #p .section-title::after{
+                  content: none;
+                }
+                #p .section-title::before{
+                  top:110%;
+                }
+                @media only screen and (max-width: 768px) {
+            .slide1 {
+                flex: 1 1 100%; /* 2 products in a row */
+            }
+          }
+          .card-title-overlay {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    background: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    padding: 10px;
+                    text-align: center;
+                }
+                .card-img-top {
+                    position: relative;
+                }
+                .carousel-control-prev, .carousel-control-next {
+                    opacity: 0;
+                    transition: opacity 0.5s;
+                }
+                #cardCarousel:hover .carousel-control-prev,
+                #cardCarousel:hover .carousel-control-next {
+                    opacity: 1;
+                }
+                .carousel-control-prev {
+                    position: absolute;
+                    left: -5%;
+                }
+                .carousel-control-next {
+                    position: absolute;
+                    right: -5%;
+                }
+ 
+
+
+        </style>
+</head>
+<body>
+   
+    <div id="warpper">
+        
+        <header>
+            <div class="header_nav">
+            <nav class="navbar navbar-expand-lg navbar-custom">
+                <a class="navbar-brand" href="#">
+                    <img src="https://legrandviet.vn/wp-content/uploads/2022/12/Logo_Legrand_SA.svg" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" style="justify-content: space-between;" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">GIỚI THIỆU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown" href="#">SẢN PHẨM</a>
+                            <div class="dropdown-menu" aria-labelledby="sanPhamDropdown">
+                        <a class="dropdown-item" href="#">Switches and sockets</a>
+                        <a class="dropdown-item" href="#">Smart Home</a>
+                        <a class="dropdown-item" href="#">UPS</a>
+                        <a class="dropdown-item" href="#">Digital Infrastructure</a>
+                    </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TIN TỨC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CATALOGUE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 ml-auto search-container">
+                        <input class="form-control mr-sm-2" type="search" placeholder="bạn muốn tìm gì" aria-label="Search">
+                        <svg width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zm-5.342 1.397a5.5 5.5 0 1 1 7.778-7.778 5.5 5.5 0 0 1-7.778 7.778z"/>
+                        </svg>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        </header>
+    <div class="social-sidebar">
+      <a href="https://www.facebook.com/kpsvietnam" target="_blank">
+          <img src="assets/images/Facebook_f_logo_(2019).svg" alt="Facebook">
+      </a>
+      <a href="https://x.com/CongtyKPS " target="_blank">
+          <img src="assets/images/new-2023-twitter-logo-x-icon-design_1017-45418.avif" alt="Twitter">
+          
+      </a>
+      <a href="https://www.instagram.com/cty_kps_hethonganninh/" target="_blank">
+          <img src="assets/images/Instagram_icon.png" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/in/kps-cty-cp-h%E1%BB%87-th%E1%BB%91ng-an-ninh-khai-ph%C3%A1t-23b792317/" target="_blank">
+          <img src="assets/images/LinkedIn_logo_initials.png" alt="LinkedIn">
+      </a>
+     
+  </div>
+  <div id="back-to-top" class="hidden">
+    <i class="fa-solid fa-chevron-up"></i>
+</div>
+
+<div class="new">
+    <div>
+        <h2>  <span class="new-title">
+            VỀ CHÚNG TÔI 
+        </h2>
+            <hr>
+        </span>
+    </div>
+    <div class="new-content">
+<p class="contentt"><span> Bước sang thềm năm mới, toàn thể thành viên công ty xin chúc cho công ty ngày càng phát triển, có nhiều đối tác và gặt hái được nhiều thành công trong năm mới, cũng xin chúc các thành viên của công ty dồi dào sức khỏe, làm ăn phát tài có thêm nhiều đóng góp để công ty ngày càng phát triển và tiến xa hơn nữa, cuối cùng xin chúc cho tất cả chúng ta sang năm mới vạn sự như ý và an khang thịnh vượng!”</span></p>
+<p>
+    <img src="assets/images/Banner-2.jpg" alt="">
+    <br>
+   
+</p>
+<p></p>
+
+    </div>
+</div>
+<hr>
+<div class="container">
+    <div >
+       <h3> Mời các bạn xem các dòng sản phẩm của legrand  dưới đây!</h3>
+    </div>
+    
+    <div class="container text-center slider-container">
+        <button class="arrow left" onclick="prevSlide()"><i class="fa-solid fa-circle-chevron-left"></i></button>
+        <button class="arrow right" onclick="nextSlide()"><i class="fa-solid fa-circle-chevron-right"></i></button>
+          <div class="row slider-container-content" style="transition: transform 0.9s ease 0.2s;" >
+  
+            <div class="col slide1">
+              <div class="card" style="width: 18rem; ">
+                  <a href="" style="color: black; position: relative;">
+                <img src="assets/images/download.png" class="card-img-top" alt="...">
+                  <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                      <h5 class="card-title">Card title</h5>
+      
+                    </div>
+                  </a>
+                  <div class="card-body">
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   
+                  </div>
+                </div>
+            </div>
+            <div class="col slide1">
+              <div class="card" style="width: 18rem; ">
+                  <a href="" style="color: black; position: relative;">
+                <img src="assets/images/download.png" class="card-img-top" alt="...">
+                  <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                      <h5 class="card-title">Card title</h5>
+      
+                    </div>
+                  </a>
+                  <div class="card-body">
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   
+                  </div>
+                </div>
+            </div>
+            <div class="col slide1">
+              <div class="card" style="width: 18rem; ">
+                  <a href="" style="color: black; position: relative;">
+                <img src="assets/images/download.png" class="card-img-top" alt="...">
+                  <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                      <h5 class="card-title">Card title</h5>
+      
+                    </div>
+                  </a>
+                  <div class="card-body">
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   
+                  </div>
+                </div>
+            </div>
+            <div class="col slide1">
+              <div class="card" style="width: 18rem; ">
+                  <a href="" style="color: black; position: relative;">
+                <img src="assets/images/download.png" class="card-img-top" alt="...">
+                  <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                      <h5 class="card-title">Card title</h5>
+      
+                    </div>
+                  </a>
+                  <div class="card-body">
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   
+                  </div>
+                </div>
+            </div>
+            <div class="col slide1">
+              <div class="card" style="width: 18rem; ">
+                  <a href="" style="color: black; position: relative;">
+                <img src="assets/images/download.png" class="card-img-top" alt="...">
+                  <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                      <h5 class="card-title">Card title</h5>
+      
+                    </div>
+                  </a>
+                  <div class="card-body">
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   
+                  </div>
+                </div>
+            </div>
+            <div class="col slide1">
+              <div class="card" style="width: 18rem; ">
+                  <a href="" style="color: black; position: relative;">
+                <img src="assets/images/download.png" class="card-img-top" alt="...">
+                  <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                      <h5 class="card-title">Card title</h5>
+      
+                    </div>
+                  </a>
+                  <div class="card-body">
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   
+                  </div>
+                </div>
+            </div>
+            <div class="col slide1">
+              <div class="card" style="width: 18rem; ">
+                  <a href="" style="color: black; position: relative;">
+                <img src="assets/images/download.png" class="card-img-top" alt="...">
+                  <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                      <h5 class="card-title">Card title</h5>
+      
+                    </div>
+                  </a>
+                  <div class="card-body">
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   
+                  </div>
+                </div>
+            </div>
+            <div class="col slide1">
+              <div class="card" style="width: 18rem; ">
+                  <a href="" style="color: black; position: relative;">
+                <img src="assets/images/download.png" class="card-img-top" alt="...">
+                  <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                      <h5 class="card-title">Card title</h5>
+      
+                    </div>
+                  </a>
+                  <div class="card-body">
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   
+                  </div>
+                </div>
+            </div>
+            <div class="col slide1">
+              <div class="card" style="width: 18rem; ">
+                  <a href="" style="color: black; position: relative;">
+                <img src="assets/images/download.png" class="card-img-top" alt="...">
+                  <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                      <h5 class="card-title">Card title</h5>
+      
+                    </div>
+                  </a>
+                  <div class="card-body">
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   
+                  </div>
+                </div>
+            </div>
+          </div>
+         
+  
+        </div>
+</div>
+     <footer class="footer" style="padding-top: 10px; padding-bottom: 0px;">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4" id="p">
+                  <div class="section-title">VỀ CHÚNG TÔI</div>
+                  <p class="font" style="text-align: justify">Tại Việt Nam, KPS là đối tác phân phối chính thức của các hãng uy tín trên thế giới như Bosch (Đức), Unify (Siemens - Đức), Orion images (Mỹ), Tycon (Mỹ), CNB - iCanTek (Korea), Soltech (Korea), Legrand (Nhật Bản). Sự linh hoạt trong dây sản phẩm phân phối cùng như hợp tác chặt chẽ với các nhà sản xuất với hy vọng mang đến những giải pháp thoả mãn nhu cầu khách hàng ở mức cao nhất.</p>
+                  <p class="font"><a href="#">Xem thêm</a></p>
+                  <div class="social-icons font">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+              <div class="col-md-4" id="p" style=" width: 65%;">
+                  <div class="section-title">THÔNG TIN LIÊN HỆ</div>
+                  <div class="contact-info d-flex">
+                      <img src="assets/images/van-phong-ho-chi-minh-33779683.jpg" alt="Building Image">
+                      <address style="margin-left: 30px;">
+                          <strong>VĂN PHÒNG HỒ CHÍ MINH</strong><br><br>
+                          <p class="font"> <span class="icon_dc"></span>
+                          10-12 Đồng Văn Cống, phường Thạnh Mỹ Lợi, TP. Thủ Đức, TP. Hồ Chí Minh
+                    </p>
+                         <p class="font"> <span class="icon_dt"></span> +84 903 709 019</p>
+                          <a href="mailto:kpshn@kps.com.vn"><p class="font" > <span class="icon_email"></span> kps@kps.com.vn</p></a>
+
+                          <p class="font"><span class="icon_dh"></span><strong>GIỜ LÀM VIỆC</strong><br>
+                          <p class="font" style="padding-left: 5px;">
+                            Thứ Hai – Thứ Sáu: 8:00 SA - 17:30 CH<br>
+                            Thứ Bảy - Chủ Nhật: Ngày nghỉ</p>
+                        </address>
+                     
+                  </div>
+              </div>
+              <!-- <div class="col-md-4">
+                  <div class="section-title">QUY ĐỊNH & CHÍNH SÁCH</div>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Chính sách bảo hành, đổi trả</a></li>
+                      <li><a href="#">Giao hàng, thanh toán và góp ý</a></li>
+                      <li><a href="#">Giấy phép kinh doanh</a></li>
+                  </ul>
+              </div> -->
+          </div>
+      </div>
+      <div class="footer-bottom" style="padding-top: 20px; padding-bottom: 6px;">
+          <div class="container">
+              <p>2010 © Bản quyền thuộc KPS</p>
+          </div>
+      </div>
+  </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

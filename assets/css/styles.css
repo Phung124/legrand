@@ -1,0 +1,483 @@
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4A4A4A;
+    color: #fff;
+    z-index: 2;
+    box-shadow: 0 -5px 20px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  
+   
+}
+.header_nav{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 1440px;
+    margin: 0px auto;
+}
+.header_na{
+    display: flex;
+    align-items: center;
+}
+  
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+.nav_item {
+
+}
+
+.nav-item :hover{
+    color: rgb(9, 168, 168);
+    cursor: pointer;
+   
+}
+.dropdown {
+    position: relative;
+    display: inline-block; 
+    cursor: pointer;
+   
+}
+/* .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f5f5;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    cursor: default;
+    transform-origin: calc(100% - 20px) top;
+    animation: headerNotifyGrowth ease-in 0.3s;
+    top: 52px;
+    z-index: 10;
+}
+.dropdown-content::after {
+    content: "";
+  cursor: pointer;
+  position: absolute;
+  border-width: 39px;
+  top: -50px;
+  border-style: solid;
+  border-color: transparent transparent #f6f5f5 transparent;
+  z-index: -1;
+}
+@keyframes headerNotifyGrowth {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #e9ecef;
+}
+.dropdown:hover .dropdown-content {
+    display: flex;
+} */
+
+
+.nav-link:hover {
+    color: rgb(9, 168, 168) !important;
+    cursor: pointer;
+}
+.dropdown-menu {
+    background-color: #333; /* Adjust dropdown background color */
+}
+.dropdown-menu .dropdown-item {
+    color: white; /* Ensure dropdown items are white */
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: white;
+}
+
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+    width: 1440px; 
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    text-align: center;
+    position: relative;
+    margin: 50px 0;
+    font-weight: bold;
+    color: red;
+}
+.section-title::before,
+.section-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background-color: lightgray;
+    width: 35%;
+}
+.section-title::before {
+    left: 0;
+}
+.section-title::after {
+    right: 0;
+}
+.section-description {
+    text-align: center;
+    margin-top: 10px;
+    color: gray;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+    display: none; 
+    color: rgb(201, 10, 10);
+}
+.slider-container{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider-container:hover .arrow {
+    display: block; 
+}
+.slide1 {
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+.slide2 {
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+.left {
+    position: absolute;
+    left: 10px;
+    top:30%
+}
+
+.right {
+    position: absolute;
+    right: 10px;
+    top:30%
+}
+main {
+    flex: 3;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-left: 20px;
+}
+.text_color{
+    color: #fff;
+}
+
+.with5{
+width: 50%;
+}
+.icon_dc{
+    background: url(https://kps.com.vn/images/gt_diachi.png) no-repeat left;
+    float: left;
+    width: 20px;
+    height: 22px;
+    margin-right: 5px;
+}
+.icon_dt{
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABB0lEQVQ4jWP4//8/AzUxVQ0bPgb2A/E3IH4AxBOAWJEUA9mBuA2Iu6BskJgdECcAcSsQvwTiz0AcRqyB8/8jwGQk8TggtgJifiCeC5UPJ8bAD0gG/gFiEaghV6Bim4GYE4hnAfFPIFYmZOBZJAPXInmbBYjdoRZuhfKfA/FsQgaWQQ37C8Q6WLzkAJUHhWsFNEzxGigMxI+hmhbiCPhLQJwHxCFQdQSTTTiSt2uwyAsCMRcQW/6HRCJR6bAXydBaNDl+HHrwGsj4H5E8QGAREJtBI+H1f0gs85FiIAx3/8cN5pBjIAhHAvF9LAbOJddAEBb9D0lSJ4H4GRCv/w+JHLINJBoPfgMBkgTvNT5J2IgAAAAASUVORK5CYII=) no-repeat left;
+    float: left;
+    width: 20px;
+    height: 22px;
+    margin-right: 5px;
+}
+.icon_email{
+    background: url(https://kps.com.vn/images/gt_email.png) no-repeat left;
+    float: left;
+    width: 20px;
+    height: 22px;
+    margin-right: 5px;
+}
+.icon_dh{
+    background: url(https://kps.com.vn/images/gt_time.png) no-repeat left;
+    float: left;
+    width: 20px;
+    height: 22px;
+    margin-right: 5px;
+}
+.font{
+    font-size: 0.9rem;
+}
+.textt a{
+    text-decoration: none;
+    text-align: center;
+}
+.text-color{ 
+    text-decoration: none;
+    color: #4A4A4A;
+}
+.social-sidebar {
+    position: fixed;
+    top: 65%;
+    transform: translateY(-50%);
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    z-index: 20;
+}
+
+.social-sidebar a {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.social-sidebar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.social-sidebar img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #215F8B;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s;
+    z-index: 100;
+}
+
+#back-to-top i {
+    color: #fff;
+    font-size: 24px;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+.col-md-4 img{
+    max-width:100% ;
+    border: 1px solid rgb(94, 96, 96);
+}
+.col-md-4 img:hover{
+    border: 1px solid rgb(68, 70, 70);
+}
+.details h5{
+font-size: 1.20rem;
+margin-bottom: 0px;
+}
+.details p{
+    margin-bottom: 0px;
+    font-size: 15px;
+    color: #6c6969;
+    font-weight: 500;
+}
+.details a{
+    text-decoration: none;
+    color: #215F8B;
+}
+.details a span{
+    border: 1px solid #215F8B;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    padding: 0px 8px;
+}
+.col .card{
+    text-decoration: none;
+    color: #333;
+}
+.list-group li {
+    list-style: none;
+   
+}
+.list-item{
+    text-decoration: none;
+    color: #4A4A4A;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+li .list-item:hover{
+    color: #226b9e;
+}
+.list h5{
+    margin: 0px;
+}
+h5 .icon {
+    width: 22px;
+    height: 22px;
+    float: left;
+    background: url(https://kps.com.vn/images/icon_muiten1.png) no-repeat center;
+}
+.list{
+    background-color: #ECECED;
+    padding: 8px 0px;
+    align-items: center;
+}
+.list-item .icon{
+    width: 22px;
+    height: 22px;
+    float: left;
+    background: url(https://kps.com.vn/images/icon_muiten2.png) no-repeat center;
+}
+.list-group li{
+    border-bottom: 1px solid #cbcbd8;
+    padding: 6px 0px;
+}
+.list-group li:hover{
+    background-color: #c7c2c2;
+  
+}
+.d-flex li a{
+    text-decoration: none;
+    color: #000;
+    padding-left: 5px;
+    list-style: none;
+}
+.d-flex li{
+    list-style: none;
+}
+.d-flex li::before{
+   
+}
+.pagination{
+    justify-content: center;
+    align-items: center;
+}
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.page-item {
+    margin: 0 5px;
+}
+.page-link {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+}
+.page-link:hover {
+    background-color: #444;
+    color:red;
+}
+.page-link i {
+    vertical-align: middle;
+}
+.pagination{
+    margin-bottom: 10px;
+}
+.new{
+
+    text-align: center;
+    max-width: 1000px;
+    margin: 0px auto ;
+    margin-top: 8rem;
+   
+}
+
+.new-title{
+    color: #444;
+    
+}
+hr {
+    border: 0;
+    height: 2px;
+    background: #bebcbc;
+}
+.contentt{
+    text-align: justify;
+}
+.slidem{
+    border: 1px solid;
+    border-radius: 2px;
+}
+.new-item{
+    border-radius: 3px;
+}
+
+.sidebar-wrapper {
+    position: fixed;
+    top: 200px; /* Bắt đầu ngay dưới header */
+    width: 25%;
+    height: calc(100% - 120px); /* Trừ đi chiều cao của header và footer */
+    overflow-y: auto;
+    z-index: 9;
+}
+
+
