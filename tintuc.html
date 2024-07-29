@@ -10,7 +10,37 @@
     <link rel="stylesheet" href="assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
 
 <style>
+         .search-form {
+    background-color: #e8e8e8;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
 
+.search-form input,
+.search-form select,
+.search-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.search-form button {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.search-form button:hover {
+    background-color: #ddd;
+}
+/* form */
 @media only screen and (max-width: 900px) {
     .navbar-custom {
        /* Đảm bảo thanh điều hướng chiếm toàn bộ chiều rộng màn hình */
@@ -242,12 +272,9 @@ font-weight: 400;
             flex-direction: column;
        }
        .sidebar-wrapper {
-    position: fixed;
-    top: 200px; /* Bắt đầu ngay dưới header */
-    width: 25%;
-    height: calc(100% - 120px); /* Trừ đi chiều cao của header và footer */
-    overflow-y: auto;
-    z-index: 9;
+    position: sticky;
+    top: 150px; /* Bắt đầu ngay dưới header */
+    bottom: 100px;
 }
 </style>
 </head>
@@ -258,7 +285,7 @@ font-weight: 400;
         <header>
             <div class="header_nav">
             <nav class="navbar navbar-expand-lg navbar-custom">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="https://legrandviet.vn/wp-content/uploads/2022/12/Logo_Legrand_SA.svg" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -279,13 +306,13 @@ font-weight: 400;
                     </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="tintucchitiet.html">TIN TỨC</a>
+                            <a class="nav-link" href="tintuc.html">TIN TỨC</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CATALOGUE</a>
+                            <a class="nav-link" href="catalogue.html">CATALOGUE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">LIÊN HỆ</a>
+                            <a class="nav-link" href="">LIÊN HỆ</a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0 ml-auto search-container">
@@ -318,14 +345,13 @@ font-weight: 400;
   <div id="back-to-top" class="hidden">
     <i class="fa-solid fa-chevron-up"></i>
 </div>
-
-
 <div class="container " style="margin-top: 150px;">
 
         <div class="row">
             <!-- Main News Section -->
             <div class="col-md-9">
                 <h3 style="margin-bottom: 1x;">TIN TỨC</h3>
+                <a href="">
                 <div class="news-item">
                     <img src="assets/images/65507208_380x215.jpg" alt="Imou">
                     <div>
@@ -334,14 +360,38 @@ font-weight: 400;
                         <p>Camera Imou đã trở thành một lựa chọn phổ biến trong ngành công nghiệp an ninh nhờ vào chất lượng...</p>
                     </div>
                 </div>
+            </a>
+                <a href="">
                 <div class="news-item">
-                    <img src="assets/images/11292826_380x215.jpg" alt="Hikvision">
+                    <img src="assets/images/78482253_380x215.jpg" alt="Hikvision">
                     <div>
                         <h5>Cách xem lại camera trên điện thoại bằng phần mềm Hik-Connect</h5>
                        
                         <p>Các bước để xem lại dữ liệu camera trên điện thoại B1: Mở phần mềm xem camera Hikvision của bạn...</p>
                     </div>
                 </div>
+            </a>
+                <a href="">
+                <div class="news-item">
+                    <img src="assets/images/05849660_380x215.jpg" alt="Wifi Camera">
+                    <div>
+                        <h5>MUA CAMERA WIFI CHÍNH HÃNG GIÁ TỐT CHỈ TẠI VIỄN THÔNG VINA</h5>
+                        
+                        <p>Khi công nghệ giám sát trong lĩnh vực...</p>
+                    </div>
+                </div>
+            </a>
+                <a href="">
+                <div class="news-item">
+                    <img src="assets/images/1.png" alt="Wifi Camera">
+                    <div>
+                        <h5>MUA CAMERA WIFI CHÍNH HÃNG GIÁ TỐT CHỈ TẠI VIỄN THÔNG VINA</h5>
+                        
+                        <p>Khi công nghệ giám sát trong lĩnh vực...</p>
+                    </div>
+                </div>
+            </a>
+                <a href="">
                 <div class="news-item">
                     <img src="assets/images/11292826_380x215.jpg" alt="Wifi Camera">
                     <div>
@@ -350,43 +400,66 @@ font-weight: 400;
                         <p>Khi công nghệ giám sát trong lĩnh vực...</p>
                     </div>
                 </div>
+            </a>
+                <a href="">
+                <div class="news-item">
+                    <img src="assets/images/11292826_380x215.jpg" alt="Wifi Camera">
+                    <div>
+                        <h5>MUA CAMERA WIFI CHÍNH HÃNG GIÁ TỐT CHỈ TẠI VIỄN THÔNG VINA</h5>
+                        
+                        <p>Khi công nghệ giám sát trong lĩnh vực...</p>
+                    </div>
+                </div>
+                </a>
+
             </div>
             <!-- Sidebar Section -->
             <div class="col-md-3">
                 
                 <div class="sidebar-wrapper">
                     <h5>Tin nổi bật</h5>
+                   
                 <div class="sidebar">
+                    <a href="">
                     <div class="news-item">
                         <img src="assets/images/1.png" alt="Featured 1">
                         <div>
                             <p>Cách xem lại camera trên điện thoại bằng phần mềm Hik-Connect</p>
                         </div>
                     </div>
+                    </a>
+                    <a href="">
                     <div class="news-item">
                         <img src="assets/images/2.jpg" alt="Featured 2">
                         <div>
                             <p>Mua camera giá tốt chỉ có tại kps</p>
                         </div>
                     </div>
+                </a>
+                    <a href="">
                     <div class="news-item">
                         <img src="assets/images/3.png" alt="Featured 3">
                         <div>
                             <p>Có nên sử dụng camera quan sát có hồng ngoại? Tầm xa quan sát của camera hồng ngoại là...</p>
                         </div>
                     </div>
+                </a>
+                    <a href="">
                     <div class="news-item">
                         <img src="assets/images/4.png" alt="Featured 4">
                         <div>
                             <p>Những cách kéo dài tuổi thọ khóa cửa thông minh</p>
                         </div>
                     </div>
+                </a>
+                    <a href="">
                     <div class="news-item">
                         <img src="assets/images/5.jpg" alt="Featured 5">
                         <div>
                             <p>Viễn Thông VINA thay đổi diện mạo mới</p>
                         </div>
                     </div>
+                </a>
                 </div>
                 </div>
         </div>
@@ -412,6 +485,7 @@ font-weight: 400;
             </ul>
         </nav>
     </div>
+    
      <footer class="footer" style="padding-top: 10px; padding-bottom: 0px;">
       <div class="container">
           <div class="row">
