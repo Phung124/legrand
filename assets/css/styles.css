@@ -470,14 +470,11 @@ hr {
 .new-item{
     border-radius: 3px;
 }
-
-.sidebar-wrapper {
-    position: fixed;
-    top: 200px; /* Bắt đầu ngay dưới header */
-    width: 25%;
-    height: calc(100% - 120px); /* Trừ đi chiều cao của header và footer */
-    overflow-y: auto;
-    z-index: 9;
+.sidebar a{
+    text-decoration: none;
+    color: var(--bs-body-color);
 }
-
-
+.col-md-9 a{
+    text-decoration: none;
+    color: var(--bs-body-color); 
+} 
