@@ -481,3 +481,40 @@ hr {
     text-decoration: none;
     color: var(--bs-body-color); 
 } 
+.carousel-item .textt:hover{
+background-color: #aeacac;
+}
+.text-color:hover{
+    color: red;
+}
+.form-header {
+    background-color: #69a89a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.form-control {
+    border: 1px solid #69a89a;
+}
+
+.form-group label{
+    padding-right: 5px;
+    font-weight: bold;
+}
+.form-check-label{
+    font-weight: 300;
+}
+
+.privacy-text {
+    font-size: 12px;
+    color: #69a89a;
+}
+.form-group{
+    margin-bottom: 10px;
+}
+.form-center{
+    width: 60%;
+    margin: 0px auto;
+}
