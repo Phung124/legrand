@@ -1,0 +1,48 @@
+.navbar-custom {
+    background-color: #4f4f4f;
+}
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+.navbar-nav .nav-link:hover {
+    color: #ff0000;
+}
+.dropdown-menu {
+    background-color: #4f4f4f;
+    border: none;
+}
+.dropdown-item {
+    color: #ffffff;
+}
+.dropdown-item:hover {
+    color: #ff0000;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 150px;
+}
+.search-bar button {
+    border: none;
+    background: none;
+    color: #4f4f4f;
+    cursor: pointer;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* optional: makes the dropdown menu appear immediately below the menu item */
+}
+.dropdown-menu-columns {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 1rem;
+}

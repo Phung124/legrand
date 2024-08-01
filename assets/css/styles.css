@@ -4,18 +4,8 @@
     padding: 0;
 }
 
-header {
-    background-color: #4A4A4A;
-    color: #fff;
-    z-index: 2;
-    box-shadow: 0 -5px 20px 10px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-  
-   
-}
+
+/*     
 .header_nav{
    
     display: flex;
@@ -29,7 +19,7 @@ header {
     display: flex;
     align-items: center;
 }
-  
+   */
 
 nav ul {
     list-style: none;
@@ -324,7 +314,7 @@ width: 50%;
 .col-md-4 img{
     max-width:100% ;
     max-width: 100%;
-    width: 191px;
+    width: 300px;
     height: 110px;
     border: 1px solid rgb(94, 96, 96);
 }
