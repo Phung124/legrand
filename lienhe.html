@@ -31,22 +31,9 @@
             padding: 0 15px;
             background-color: #4A4A4A;
         }
-        .navbar-nav .nav-link {
-            color: #ffffff;
-        }
-        .navbar-nav .nav-link:hover {
-            color: #ff0000;
-        }
-        .dropdown-menu {
-            background-color: #4f4f4f;
-            border: none;
-        }
-        .dropdown-item {
-            color: #ffffff;
-        }
-        .dropdown-item:hover {
-            color: #ff0000;
-        }
+        /* .dropdown-item:hover {
+    color: #ff0000;
+} */
         .search-bar {
             display: flex;
             align-items: center;
@@ -191,47 +178,7 @@ flex: 1 0 25% ;
    flex-wrap: nowrap;
    transition: transform 0.5s ease;
 }
-       .footer {
-           background-color: #2a6b8e;
-           color: white;
-           padding: 40px 0;
-       }
-       .footer a {
-           color: #d1ecf1;
-           text-decoration: none;
-       }
-       .footer a:hover {
-           text-decoration: underline;
-       }
-       .footer .social-icons i {
-           margin-right: 10px;
-           font-size: 24px;
-       }
-       .footer .section-title {
-           font-weight: bold;
-           margin-bottom: 20px;
-           color: #fff;
-           text-align: justify;
-       }
-       .footer .contact-info img {
-           max-width: 100%;
-           height: auto;
-       }
-       .footer .contact-info address, .footer .contact-info p {
-           margin-bottom: 10px;
-       }
-       .footer-bottom {
-           background-color: #25688d;
-           padding: 10px 0;
-           text-align: center;
-           font-size: 14px;
-       }
-       #p .section-title::after{
-         content: none;
-       }
-       #p .section-title::before{
-         top:110%;
-       }
+      
        @media only screen and (max-width: 768px) {
    .slide1 {
        flex: 1 1 100%; /* 2 products in a row */
@@ -304,6 +251,11 @@ font-weight: 400;
    top: 150px; /* Bắt đầu ngay dưới header */
    bottom: 100px;
 }
+@media (max-width: 600px) {
+    .card {
+        flex: 1 1 100%; /* Full width on small screens */
+    }
+}
     </style>
 </head>
 <body>
@@ -339,6 +291,13 @@ font-weight: 400;
                                         <div>
                                             <h6 class="dropdown-header">Smart Home</h6>
                                             <a class="dropdown-item" href="#">Arteor™ with Netatmo</a>
+                                            <a class="dropdown-item" href="#">Mallia Senses™ with Netatmo</a>
+                                            <a class="dropdown-item" href="#">Living Now with Netatmo</a>
+                                            <a class="dropdown-item" href="#">Netatmo</a>
+                                        </div>
+                                        <div>
+                                            <h6 class="dropdown-header">Ups</h6>
+                                            <a class="dropdown-item" href="#">Single pa</a>
                                             <a class="dropdown-item" href="#">Mallia Senses™ with Netatmo</a>
                                             <a class="dropdown-item" href="#">Living Now with Netatmo</a>
                                             <a class="dropdown-item" href="#">Netatmo</a>

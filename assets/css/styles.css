@@ -96,21 +96,18 @@ nav ul li a {
 .dropdown:hover .dropdown-content {
     display: flex;
 } */
-
-
-.nav-link:hover {
-    color: rgb(9, 168, 168) !important;
-    cursor: pointer;
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+.navbar-nav .nav-link:hover {
+    color: #ff0000;
 }
 .dropdown-menu {
-    background-color: #333; /* Adjust dropdown background color */
+    background-color: #e1e1e1;;
+    border: none;
 }
 .dropdown-menu .dropdown-item {
-    color: white; /* Ensure dropdown items are white */
-}
-.dropdown-menu .dropdown-item:hover {
-    background-color: #007bff; /* Blue background on hover */
-    color: white;
+    color: #000;
 }
 
 
@@ -211,34 +208,102 @@ aside {
 
 .with5{
 width: 50%;
+}  .footer {
+    background-color: #2a6b8e;
+    color: white;
+    padding: 40px 0;
 }
-.icon_dc{
-    background: url(https://kps.com.vn/images/gt_diachi.png) no-repeat left;
-    float: left;
+
+.footer a {
+    color: #d1ecf1;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.footer .section-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: justify;
+}
+
+.footer .contact-info img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer .contact-info address, 
+.footer .contact-info p {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    background-color: #25688d;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+#p .section-title::after {
+    content: none;
+}
+
+#p .section-title::before {
+    top: 110%;
+}
+
+.icon_dc, .icon_dt, .icon_email, .icon_dh {
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
     width: 20px;
     height: 22px;
     margin-right: 5px;
 }
-.icon_dt{
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABB0lEQVQ4jWP4//8/AzUxVQ0bPgb2A/E3IH4AxBOAWJEUA9mBuA2Iu6BskJgdECcAcSsQvwTiz0AcRqyB8/8jwGQk8TggtgJifiCeC5UPJ8bAD0gG/gFiEaghV6Bim4GYE4hnAfFPIFYmZOBZJAPXInmbBYjdoRZuhfKfA/FsQgaWQQ37C8Q6WLzkAJUHhWsFNEzxGigMxI+hmhbiCPhLQJwHxCFQdQSTTTiSt2uwyAsCMRcQW/6HRCJR6bAXydBaNDl+HHrwGsj4H5E8QGAREJtBI+H1f0gs85FiIAx3/8cN5pBjIAhHAvF9LAbOJddAEBb9D0lSJ4H4GRCv/w+JHLINJBoPfgMBkgTvNT5J2IgAAAAASUVORK5CYII=) no-repeat left;
-    float: left;
-    width: 20px;
-    height: 22px;
-    margin-right: 5px;
+
+.icon_dc {
+    background-image: url(https://kps.com.vn/images/gt_diachi.png);
 }
-.icon_email{
-    background: url(https://kps.com.vn/images/gt_email.png) no-repeat left;
-    float: left;
-    width: 20px;
-    height: 22px;
-    margin-right: 5px;
+
+.icon_dt {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABB0lEQVQ4jWP4//8/AzUxVQ0bPgb2A/E3IH4AxBOAWJEUA9mBuA2Iu6BskJgdECcAcSsQvwTiz0AcRqyB8/8jwGQk8TggtgJifiCeC5UPJ8bAD0gG/gFiEaghV6Bim4GYE4hnAfFPIFYmZOBZJAPXInmbBYjdoRZuhfKfA/FsQgaWQQ37C8Q6WLzkAJUHhWsFNEzxGigMxI+hmhbiCPhLQJwHxCFQdQSTTTiSt2uwyAsCMRcQW/6HRCJR6bAXydBaNDl+HHrwGsj4H5E8QGAREJtBI+H1f0gs85FiIAx3/8cN5pBjIAhHAvF9LAbOJddAEBb9D0lSJ4H4GRCv/w+JHLINJBoPfgMBkgTvNT5J2IgAAAAASUVORK5CYII=);
 }
-.icon_dh{
-    background: url(https://kps.com.vn/images/gt_time.png) no-repeat left;
-    float: left;
-    width: 20px;
-    height: 22px;
-    margin-right: 5px;
+
+.icon_email {
+    background-image: url(https://kps.com.vn/images/gt_email.png);
+}
+
+.icon_dh {
+    background-image: url(https://kps.com.vn/images/gt_time.png);
+}
+
+@media (max-width: 768px) {
+    .footer .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .footer .contact-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .contact-info img {
+        margin-bottom: 20px;
+    }
 }
 .font{
     font-size: 0.9rem;
@@ -434,35 +499,50 @@ h5 .icon {
 }
 .pagination{
     margin-bottom: 10px;
-}
-.new{
-
+}.new {
     text-align: center;
     max-width: 1000px;
-    margin: 0px auto ;
+    margin: 0 auto;
     margin-top: 8rem;
-   
+    padding: 0 1rem; /* Thêm khoảng cách bên trong để tránh nội dung dính vào cạnh màn hình */
 }
 
-.new-title{
+.new-title {
     color: #444;
-    
 }
+
 hr {
     border: 0;
     height: 2px;
     background: #bebcbc;
 }
-.contentt{
+
+.contentt {
     text-align: justify;
 }
-.slidem{
+
+.slidem {
     border: 1px solid;
     border-radius: 2px;
 }
-.new-item{
+
+.new-item {
     border-radius: 3px;
 }
+
+/* Thêm các quy tắc CSS media queries để làm cho nội dung responsive */
+@media (max-width: 768px) {
+    .new {
+        margin-top: 4rem; /* Giảm khoảng cách trên cùng cho màn hình nhỏ hơn */
+    }
+    .new-title {
+        font-size: 1.5rem; /* Điều chỉnh kích thước font tiêu đề cho màn hình nhỏ hơn */
+    }
+    .contentt {
+        font-size: 1rem; /* Điều chỉnh kích thước font nội dung cho màn hình nhỏ hơn */
+    }
+}
+
 .sidebar a{
     text-decoration: none;
     color: var(--bs-body-color);
@@ -507,4 +587,19 @@ background-color: #aeacac;
 .form-center{
     width: 60%;
     margin: 0px auto;
+}
+.card{
+    text-decoration: none;
+    display: inline-block;
+    width: 100%; /* Điều chỉnh dựa trên container của bạn */
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Chiều cao cố định */
+    object-fit: cover; /* Đảm bảo hình ảnh phủ đầy vùng mà không bị méo */
 }

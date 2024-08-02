@@ -1,7 +1,7 @@
 let currentSlide = 0;
 
 function showSlide(index) {
-    const slides = document.querySelectorAll('.slide1');
+    const slides = document.querySelectorAll('.slide-item');
     const totalSlides = slides.length;
     const slidesPerView = 4; // Number of slides to show at once
 
@@ -62,5 +62,19 @@ $(document).ready(function() {
         });
     });
 });
-
+$(document).ready(function() {
+    if ('ontouchstart' in document.documentElement) {
+        $('.navbar-nav .dropdown-toggle').on('click', function(e) {
+            var $el = $(this).siblings('.dropdown-menu');
+            var isVisible = $el.is(':visible');
+            $('.dropdown-menu').not($el).slideUp();
+            if (!isVisible) {
+                $el.slideDown();
+            } else {
+                $el.slideUp();
+            }
+            return false;
+        });
+    }
+});
 

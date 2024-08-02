@@ -30,22 +30,9 @@
             padding: 0 15px;
             background-color: #4A4A4A;
         }
-        .navbar-nav .nav-link {
-            color: #ffffff;
-        }
-        .navbar-nav .nav-link:hover {
-            color: #ff0000;
-        }
-        .dropdown-menu {
-            background-color: #4f4f4f;
-            border: none;
-        }
-        .dropdown-item {
-            color: #ffffff;
-        }
-        .dropdown-item:hover {
-            color: #ff0000;
-        }
+        /* .dropdown-item:hover {
+    color: #ff0000;
+} */
         .search-bar {
             display: flex;
             align-items: center;
@@ -190,47 +177,7 @@ flex: 1 0 25% ;
    flex-wrap: nowrap;
    transition: transform 0.5s ease;
 }
-       .footer {
-           background-color: #2a6b8e;
-           color: white;
-           padding: 40px 0;
-       }
-       .footer a {
-           color: #d1ecf1;
-           text-decoration: none;
-       }
-       .footer a:hover {
-           text-decoration: underline;
-       }
-       .footer .social-icons i {
-           margin-right: 10px;
-           font-size: 24px;
-       }
-       .footer .section-title {
-           font-weight: bold;
-           margin-bottom: 20px;
-           color: #fff;
-           text-align: justify;
-       }
-       .footer .contact-info img {
-           max-width: 100%;
-           height: auto;
-       }
-       .footer .contact-info address, .footer .contact-info p {
-           margin-bottom: 10px;
-       }
-       .footer-bottom {
-           background-color: #25688d;
-           padding: 10px 0;
-           text-align: center;
-           font-size: 14px;
-       }
-       #p .section-title::after{
-         content: none;
-       }
-       #p .section-title::before{
-         top:110%;
-       }
+      
        @media only screen and (max-width: 768px) {
    .slide1 {
        flex: 1 1 100%; /* 2 products in a row */
@@ -303,6 +250,11 @@ font-weight: 400;
    top: 150px; /* Bắt đầu ngay dưới header */
    bottom: 100px;
 }
+@media (max-width: 600px) {
+    .card {
+        flex: 1 1 100%; /* Full width on small screens */
+    }
+}
     </style>
 </head>
 <body>
@@ -339,6 +291,13 @@ font-weight: 400;
                                         <div>
                                             <h6 class="dropdown-header">Smart Home</h6>
                                             <a class="dropdown-item" href="#">Arteor™ with Netatmo</a>
+                                            <a class="dropdown-item" href="#">Mallia Senses™ with Netatmo</a>
+                                            <a class="dropdown-item" href="#">Living Now with Netatmo</a>
+                                            <a class="dropdown-item" href="#">Netatmo</a>
+                                        </div>
+                                        <div>
+                                            <h6 class="dropdown-header">Ups</h6>
+                                            <a class="dropdown-item" href="#">Single pa</a>
                                             <a class="dropdown-item" href="#">Mallia Senses™ with Netatmo</a>
                                             <a class="dropdown-item" href="#">Living Now with Netatmo</a>
                                             <a class="dropdown-item" href="#">Netatmo</a>
@@ -462,142 +421,142 @@ font-weight: 400;
         
     </div>
     <div class="container text-center slider-container">
-      <button class="arrow left" onclick="prevSlide()"><i class="fa-solid fa-circle-chevron-left"></i></button>
-      <button class="arrow right" onclick="nextSlide()"><i class="fa-solid fa-circle-chevron-right"></i></button>
-        <div class="row slider-container-content" style="transition: transform 0.9s ease 0.2s;" >
-
-          <div class="col slide1">
-            <div class="card" style="width: 18rem; ">
-                <a href="sanpham.html" style="color: black; position: relative;">
-              <img src="assets/images/cammera.jpg" class="card-img-top" alt="...">
-                <div class="card-img-overlay card-img-overlay-bottom nen "  >
-                    <h5 class="card-title">Card title</h5>
-    
+        <button class="arrow left" onclick="prevSlide()"><i class="fa-solid fa-circle-chevron-left"></i></button>
+        <button class="arrow right" onclick="nextSlide()"><i class="fa-solid fa-circle-chevron-right"></i></button>
+          <div class="row slider-container-content" style="transition: transform 0.9s ease 0.2s;" >
+  
+            <div class="col-md-3 col-sm-6 mb-3 slide-item">
+              <div class="card" >
+                  <a href="sanpham.html" style="color: black; position: relative;">
+                <img src="assets/images/cammera.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                      <h5 class="card-title">Card title</h5>
+      
+                    </div>
+                  </a>
+                  <div class="card-body">
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   
                   </div>
-                </a>
-                <div class="card-body">
-                
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                 
                 </div>
-              </div>
-          </div>
-          <div class="col slide1">
-            <div class="card" style="width: 18rem; ">
-                <a href="sanpham.html" style="color: black; position: relative;">
-              <img src="assets/images/cammera.jpg" class="card-img-top" alt="...">
-                <div class="card-img-overlay card-img-overlay-bottom nen "  >
-                    <h5 class="card-title">Card title</h5>
-    
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3 slide-item">
+              <div class="card" >
+                  <a href="sanpham.html" style="color: black; position: relative;">
+                <img src="assets/images/cammera.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                      <h5 class="card-title">Card title</h5>
+      
+                    </div>
+                  </a>
+                  <div class="card-body">
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   
                   </div>
-                </a>
-                <div class="card-body">
-                
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                 
                 </div>
-              </div>
-          </div>
-          <div class="col slide1">
-            <div class="card" style="width: 18rem; ">
-                <a href="sanpham.html" style="color: black; position: relative;">
-              <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
-                <div class="card-img-overlay card-img-overlay-bottom nen "  >
-                    <h5 class="card-title">Card title</h5>
-    
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3 slide-item">
+              <div class="card" >
+                  <a href="sanpham.html" style="color: black; position: relative;">
+                <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                      <h5 class="card-title">Card title</h5>
+      
+                    </div>
+                  </a>
+                  <div class="card-body">
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   
                   </div>
-                </a>
-                <div class="card-body">
-                
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                 
                 </div>
-              </div>
-          </div>
-          <div class="col slide1">
-            <div class="card" style="width: 18rem; ">
-                <a href="sanpham.html" style="color: black; position: relative;">
-              <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
-                <div class="card-img-overlay card-img-overlay-bottom nen "  >
-                    <h5 class="card-title">Card title</h5>
-    
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3 slide-item">
+              <div class="card" >
+                  <a href="sanpham.html" style="color: black; position: relative;">
+                <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                      <h5 class="card-title">Card title</h5>
+      
+                    </div>
+                  </a>
+                  <div class="card-body">
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   
                   </div>
-                </a>
-                <div class="card-body">
-                
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                 
                 </div>
-              </div>
-          </div>
-          <div class="col slide1">
-            <div class="card" style="width: 18rem; ">
-                <a href="sanpham.html" style="color: black; position: relative;">
-              <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
-                <div class="card-img-overlay card-img-overlay-bottom nen "  >
-                    <h5 class="card-title">Card title</h5>
-    
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3 slide-item">
+              <div class="card" >
+                  <a href="sanpham.html" style="color: black; position: relative;">
+                <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                      <h5 class="card-title">Card title</h5>
+      
+                    </div>
+                  </a>
+                  <div class="card-body">
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   
                   </div>
-                </a>
-                <div class="card-body">
-                
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                 
                 </div>
-              </div>
-          </div>
-          <div class="col slide1">
-            <div class="card" style="width: 18rem; ">
-                <a href="sanpham.html" style="color: black; position: relative;">
-              <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
-                <div class="card-img-overlay card-img-overlay-bottom nen "  >
-                    <h5 class="card-title">Card title</h5>
-    
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3 slide-item">
+              <div class="card" >
+                  <a href="sanpham.html" style="color: black; position: relative;">
+                <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                      <h5 class="card-title">Card title</h5>
+      
+                    </div>
+                  </a>
+                  <div class="card-body">
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   
                   </div>
-                </a>
-                <div class="card-body">
-                
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                 
                 </div>
-              </div>
-          </div>
-          <div class="col slide1">
-            <div class="card" style="width: 18rem; ">
-                <a href="sanpham.html" style="color: black; position: relative;">
-              <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
-                <div class="card-img-overlay card-img-overlay-bottom nen "  >
-                    <h5 class="card-title">Card title</h5>
-    
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3 slide-item">
+              <div class="card" >
+                  <a href="sanpham.html" style="color: black; position: relative;">
+                <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                      <h5 class="card-title">Card title</h5>
+      
+                    </div>
+                  </a>
+                  <div class="card-body">
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   
                   </div>
-                </a>
-                <div class="card-body">
-                
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                 
                 </div>
-              </div>
-          </div>
-          <div class="col slide1">
-            <div class="card" style="width: 18rem; ">
-                <a href="sanpham.html" style="color: black; position: relative;">
-              <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
-                <div class="card-img-overlay card-img-overlay-bottom nen "  >
-                    <h5 class="card-title">Card title</h5>
-    
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3 slide-item">
+              <div class="card" >
+                  <a href="sanpham.html" style="color: black; position: relative;">
+                <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                      <h5 class="card-title">Card title</h5>
+      
+                    </div>
+                  </a>
+                  <div class="card-body">
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   
                   </div>
-                </a>
-                <div class="card-body">
-                
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                 
                 </div>
-              </div>
+            </div>
           </div>
+         
+  
         </div>
-       
-
-      </div>
 
     </div>
     <div>
@@ -615,7 +574,7 @@ font-weight: 400;
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-6 mb-3">
                             <div class="card">
 
                                 <a href="sanphamchitiet.html" class="card-img-top">
@@ -627,7 +586,7 @@ font-weight: 400;
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-6 mb-3">
                             <div class="card">
 
                                 <a href="sanphamchitiet.html" class="card-img-top">
@@ -638,7 +597,7 @@ font-weight: 400;
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
-                        </div><div class="col-md-3">
+                        </div><div class="col-md-3 col-sm-6 mb-3">
                             <div class="card">
 
                                 <a href="sanphamchitiet.html" class="card-img-top">
@@ -649,7 +608,7 @@ font-weight: 400;
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
-                        </div><div class="col-md-3">
+                        </div><div class="col-md-3 col-sm-6 mb-3">
                             <div class="card">
 
                                 <a href="sanphamchitiet.html" class="card-img-top">
@@ -660,7 +619,7 @@ font-weight: 400;
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
-                        </div><div class="col-md-3">
+                        </div><div class="col-md-3 col-sm-6 mb-3">
                             <div class="card">
 
                                 <a href="sanphamchitiet.html" class="card-img-top">
@@ -671,7 +630,7 @@ font-weight: 400;
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
-                        </div><div class="col-md-3">
+                        </div><div class="col-md-3 col-sm-6 mb-3">
                             <div class="card">
 
                                 <a href="sanphamchitiet.html" class="card-img-top">
@@ -682,7 +641,7 @@ font-weight: 400;
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
-                        </div><div class="col-md-3">
+                        </div><div class="col-md-3 col-sm-6 mb-3">
                             <div class="card">
 
                                 <a href="sanphamchitiet.html" class="card-img-top">
@@ -693,7 +652,7 @@ font-weight: 400;
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
-                        </div><div class="col-md-3">
+                        </div><div class="col-md-3 col-sm-6 mb-3">
                             <div class="card">
 
                                 <a href="sanphamchitiet.html" class="card-img-top">
@@ -732,7 +691,7 @@ font-weight: 400;
               <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-6 mb-3">
                             <div class="card">
 
                                 <a href="sanphamchitiet.html" class="card-img-top">
@@ -744,7 +703,7 @@ font-weight: 400;
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-6 mb-3">
                             <div class="card">
 
                                 <a href="sanphamchitiet.html" class="card-img-top">
@@ -755,7 +714,7 @@ font-weight: 400;
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
-                        </div><div class="col-md-3">
+                        </div><div class="col-md-3 col-sm-6 mb-3">
                             <div class="card">
 
                                 <a href="sanphamchitiet.html" class="card-img-top">
@@ -766,7 +725,7 @@ font-weight: 400;
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
-                        </div><div class="col-md-3">
+                        </div><div class="col-md-3 col-sm-6 mb-3">
                             <div class="card">
 
                                 <a href="sanphamchitiet.html" class="card-img-top">
@@ -777,7 +736,7 @@ font-weight: 400;
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
-                        </div><div class="col-md-3">
+                        </div><div class="col-md-3 col-sm-6 mb-3">
                             <div class="card">
 
                                 <a href="sanphamchitiet.html" class="card-img-top">
@@ -788,7 +747,7 @@ font-weight: 400;
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
-                        </div><div class="col-md-3">
+                        </div><div class="col-md-3 col-sm-6 mb-3">
                             <div class="card">
 
                                 <a href="sanphamchitiet.html" class="card-img-top">
@@ -799,7 +758,7 @@ font-weight: 400;
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
-                        </div><div class="col-md-3">
+                        </div><div class="col-md-3 col-sm-6 mb-3">
                             <div class="card">
 
                                 <a href="sanphamchitiet.html" class="card-img-top">
@@ -810,7 +769,7 @@ font-weight: 400;
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
-                        </div><div class="col-md-3">
+                        </div><div class="col-md-3 col-sm-6 mb-3">
                             <div class="card">
 
                                 <a href="sanphamchitiet.html" class="card-img-top">
@@ -843,7 +802,7 @@ font-weight: 400;
             </div>
           
         </div>
-        <div class="container mt-4 d">
+        <!-- <div class="container mt-4 d">
             <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -937,7 +896,7 @@ font-weight: 400;
                            
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <!-- <button class="carousel-control-next"   type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" style="    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;"aria-hidden="true"></span>
@@ -948,13 +907,109 @@ font-weight: 400;
                     <span class="carousel-control-prev-icon" style="    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
-                </button> -->
+                </button> 
                 
              
                 
               
             </div>
-        </div>    
+        </div>     -->
+        <div class="container mt-4">
+            <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 mb-3">
+                                <a href="tintucchitiet.html" class="card">
+                                    <img src="assets/images/tt.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card 1</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-3">
+                                <a href="tintucchitiet.html" class="card">
+                                    <img src="assets/images/tt1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card 2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-3">
+                                <a href="tintucchitiet.html" class="card">
+                                    <img src="assets/images/tt2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card 3</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-3">
+                                <a href="tintucchitiet.html" class="card">
+                                    <img src="assets/images/tt6.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card 4</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 mb-3">
+                                <a href="tintucchitiet.html" class="card">
+                                    <img src="assets/images/05849660_380x215.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card 5</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-3">
+                                <a href="tintucchitiet.html" class="card">
+                                    <img src="assets/images/78482253_380x215.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card 6</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-3">
+                                <a href="tintucchitiet.html" class="card">
+                                    <img src="assets/images/78482253_380x215.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card 7</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-3">
+                                <a href="tintucchitiet.html" class="card">
+                                    <img src="assets/images/11292826_380x215.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card 8</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+            </div>
+        </div>
+        
      <footer class="footer" style="padding-top: 10px; padding-bottom: 0px;">
       <div class="container">
           <div class="row">
