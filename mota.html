@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
+
+   
+    <style>
+ 
+ 
+        .carousel-caption {
+            position: absolute;
+    bottom: 8.25rem;
+    top: 35%;
+    left:22%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+        header {
+            background-color: #4A4A4A;
+            color: #fff;
+            z-index: 2;
+            box-shadow: 0 -5px 20px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+        .navbar-custom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           min-height: 80px;
+            width: 100%;
+            margin: 0px auto;
+            padding: 0 15px;
+            background-color: #4A4A4A;
+        }
+        /* .dropdown-item:hover {
+    color: #ff0000;
+} */
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 2px;
+            padding: 1px;
+            justify-content: space-between;
+        }
+        .search-bar input {
+            border: none;
+            outline: none;
+            width: 180px;
+        }
+        .search-bar button {
+            border: none;
+            background: none;
+            color: #4f4f4f;
+            cursor: pointer;
+        }
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+        .dropdown-menu-columns {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding: 1rem;
+        }
+       
+        .btn-submit {
+    background-color: #69a89a;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn-submit:hover {
+    background-color: #507d70;
+}
+        /* Liên hệ */
+        .search-form {
+   background-color: #e8e8e8;
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   margin-bottom: 10px;
+}
+
+.search-form input,
+.search-form select,
+.search-form button {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-sizing: border-box;
+   font-size: 16px;
+}
+
+.search-form button {
+   background-color: #fff;
+   color: #333;
+   cursor: pointer;
+   border: 1px solid #ccc;
+}
+
+.search-form button:hover {
+   background-color: #ddd;
+}
+       .row-limit {
+           max-height: 1300px; /* Adjust according to the approximate height of 4 rows */
+           overflow: hidden;
+       }
+   .breadcrumb-item a{
+   text-decoration: none;
+   color: #666565;
+   }
+
+   .page-link:hover {
+   background-color: #666565;
+   color:red;
+}
+   .page-link{
+       padding-top: 0px;
+       color: black;
+   }
+/* Change the arrow color to red */
+ .col-md-3{
+   margin-bottom: 20px;
+ }
+ .hidden {
+ display: none;
+}
+.col{
+margin-bottom: 1rem;
+flex: 1 0 25% ;
+
+}
+ 
+ .bg-light{
+   background-color: #215F8B;
+ }
+ .card-img-top {
+           max-width: 100%;
+         text-align: center;
+           object-fit: contain; 
+           transition: transform 0.9s ease;
+       }
+
+.card-img-top:hover{
+   transform: scale(1.1);
+}
+ .card-img-overlay-bottom {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     top: auto;
+     padding: 10px;
+     width: 100%;
+   height: 50px;
+   background-color: rgba(255, 255, 255, 0.7);
+   border-radius: 0 0 0 0;
+ }
+ .card {
+           position: relative;
+           margin: 0 auto;
+           overflow: hidden;
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+       }
+       .slider-container-content {
+   display: flex;
+   flex-wrap: nowrap;
+   transition: transform 0.5s ease;
+}
+.slider-container-content1 {
+   display: flex;
+   flex-wrap: nowrap;
+   transition: transform 0.5s ease;
+}
+      
+       @media only screen and (max-width: 768px) {
+   .slide1 {
+       flex: 1 1 100%; /* 2 products in a row */
+   }
+ }
+ .card-title-overlay {
+           position: absolute;
+           bottom: 0;
+           width: 100%;
+           background: rgba(0, 0, 0, 0.5);
+           color: white;
+           padding: 10px;
+           text-align: center;
+       }
+       .card-img-top {
+           position: relative;
+       }
+       .carousel-control-prev, .carousel-control-next {
+           opacity: 0;
+           transition: opacity 0.5s;
+       }
+       #cardCarousel:hover .carousel-control-prev,
+       #cardCarousel:hover .carousel-control-next {
+           opacity: 1;
+       }
+       .carousel-control-prev {
+           position: absolute;
+           left: -5%;
+       }
+       .carousel-control-next {
+           position: absolute;
+           right: -5%;
+       }
+/* tin tức  */
+.news-item {
+           display: flex;
+           margin-bottom: 1.5rem;
+       }
+       .news-item img {
+           width: 130px;
+   height: 120px;
+   margin-right: 1rem;
+   border-radius: 8px
+       }
+       .sidebar .news-item {
+           margin-bottom: 1rem;
+       }
+       .sidebar .news-item {
+           display: flex;
+           align-items: center;
+       }
+       .sidebar .news-item img {
+           width: 50px;
+           height: 40px;
+           margin-right: 0.5rem;
+       }
+      .news-item p{
+font-size: 0.9rem;
+font-weight: 400;
+      }
+      .fixed{
+       position: fixed;
+           top: 20px;
+           right: 10px;
+           display: flex;
+           flex-direction: column;
+      }
+      .sidebar-wrapper {
+   position: sticky;
+   top: 150px; /* Bắt đầu ngay dưới header */
+   bottom: 100px;
+}
+@media (max-width: 600px) {
+    .card {
+        flex: 1 1 100%; /* Full width on small screens */
+    }
+}
+/* */
+
+    </style>
+</head>
+<body>
+   
+    <div id="warpper">
+        <header>
+            <div style="max-width: 1440px; margin: 0px auto;">
+            <nav class="navbar navbar-expand-lg navbar-custom">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="https://legrandviet.vn/wp-content/uploads/2022/12/Logo_Legrand_SA.svg" alt="Legrand" height="40"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="gioithieu.html">GIỚI THIỆU</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" aria-expanded="false">
+                                    SẢN PHẨM
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <div class="dropdown-menu-columns">
+                                        <div>
+                                           <a href="loaisp.html"> <h6 class="dropdown-header">Switches and sockets</h6></a>
+                                            <a class="dropdown-item" href="mota.html">Mallia Senses™</a>
+                                            <a class="dropdown-item" href="mota.html">Galion</a>
+                                            <a class="dropdown-item" href="mota.html">Eloé</a>
+                                            <a class="dropdown-item" href="mota.html">Belanko™ S</a>
+                                            <a class="dropdown-item" href="mota.html">Rivia</a>
+                                        </div>
+                                        <div>
+                                            <a href="loaisp.html"><h6 class="dropdown-header">Smart Home</h6></a>
+                                            <a class="dropdown-item" href="mota.html">Arteor™ with Netatmo</a>
+                                            <a class="dropdown-item" href="mota.html">Mallia Senses™ with Netatmo</a>
+                                            <a class="dropdown-item" href="mota.html">Living Now with Netatmo</a>
+                                            <a class="dropdown-item" href="mota.html">Netatmo</a>
+                                        </div>
+                                        <div>
+                                            <a href="loaisp.html"> <h6 class="dropdown-header">Ups</h6></a>
+                                            <a class="dropdown-item" href="mota.html">Single pa</a>
+                                            <a class="dropdown-item" href="mota.html">Mallia Senses™ with Netatmo</a>
+                                            <a class="dropdown-item" href="mota.html">Living Now with Netatmo</a>
+                                            <a class="dropdown-item" href="mota.html">Netatmo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" aria-expanded="false">
+                                    BẢNG GIÁ
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <div class="dropdown-menu-columns">
+                                        <div>
+                                           
+                                            <a class="dropdown-item" href="banggia.html">Công tắt và ổ cấm</a>
+                                            <a class="dropdown-item" href="banggia.html">RCU</a>
+                                            <a class="dropdown-item" href="banggia.html"> Tủ rack</a>
+                                            <a class="dropdown-item" href="banggia.html">UPS</a>
+                                            <a class="dropdown-item" href="banggia.html">PDU</a>
+                                        </div>
+                                      
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tintuc.html">TIN TỨC</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="catalogue.html">CATALOGUE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="lienhe.html">LIÊN HỆ</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex search-bar">
+                            <input class="form-control" type="search" placeholder="bạn muốn tìm gì" aria-label="Search">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        </header>
+
+    <div class="call-button">
+        <div class="icon">
+            <a href="tel:0396217522">
+            <img src="assets/images/phone.png" alt="Call">
+        </a>
+        </div>
+        <div class="text">
+            <a href="tel:0396217522" style="color: #fff; text-decoration: none;">
+            <span>0396.217.522</span></a></div>
+    </div>
+        <div class="social-sidebar">
+            <a href="https://www.facebook.com/groups/511655014645450" target="_blank">
+                <img src="assets/images/Facebook_f_logo_(2019).svg" alt="Facebook">
+            </a>
+            <a href="https://x.com/legrandkps " target="_blank">
+                <img src="assets/images/new-2023-twitter-logo-x-icon-design_1017-45418.avif" alt="Twitter">
+                
+            </a>
+            <a href="https://www.instagram.com/legrand_kps/" target="_blank">
+                <img src="assets/images/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/legrand-authorized-distributor-kps-9b310731b/" target="_blank">
+                <img src="assets/images/LinkedIn_logo_initials.png" alt="LinkedIn">
+            </a>
+           
+        </div>
+  <div id="back-to-top" class="hidden">
+    <i class="fa-solid fa-chevron-up"></i>
+</div>
+
+
+<div class="slider">
+    <div class="slides">
+        
+        <div id="carouselExampleIndicators" class="carousel slide" >
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/images/p17_1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5>BẢNG GIÁ THIẾT BỊ ĐÓNG CẮT</h5>
+                    
+                </div>
+            </div>
+           
+            </div>
+           
+          </div>
+    
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="row" style="flex-wrap: nowrap;">
+ <div class="col-md-12 col-12">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">TRANG CHỦ</a></li>
+          <li class="breadcrumb-item"><a href="#">THIẾT BỊ ĐIỆN LEGRAND</a></li>
+          <li class="breadcrumb-item active" aria-current="page"><b>TRANG 2</b></li>
+        </ol>
+      </nav>
+ </div> 
+
+</div>
+   
+  </div>
+<div class="container">
+    <article>
+        
+  <div class="row">
+    <div class="productnam text-center"style="width: 760px;">
+        <h1>Mallia Senses™, a breath of fresh air</h1>
+        <p>
+            More aesthetic, more elegant, more functional, Mallia Senses™ enables you to fully express your creativity and style. Symbol of lightness, thin and sleek, the new Mallia Senses™ range is a breath of fresh air. Each object is a beautiful whole unto itself. Mallia Senses™, let your desire for elegance soar. Viewed from the front or in profile, the Mallia Senses™ range minimalism and lightness capture the eye.
+        </p>
+    </div>
+ </div>
+<div class="block-conllection2">
+ <div class="pd--20">
+    <div class="container-fluid1 ">
+     <div class="col-md-8 block-collection-body">
+        <h3 class="block-collection-title">
+            A reflection of contemporary style and functionality
+        </h3>
+        <hr>
+        <div class="block-collection-text">
+            <p>
+                The Galion range of wiring devices is a reflection of contemporary style and functionality designed to marry borderless design with quality and function. Crafted with excellence,it uses only the best quality components.
+            </p>
+        </div>
+        <div class="block-collection-burchure">
+            <a href="">GALION"BURCHURE <i class="fa-solid fa-arrow-down"></i></a>
+            
+        </div>
+     </div>
+        
+        <div class="col-md-4 img-block" >
+            <img src="assets/images/wiring devices - push  (450 × 450 px) (450 × 300 px) (12).png" alt="">
+        
+        </div>
+    </div>
+ </div>
+</div>
+
+<div class="block-conllection2">
+    
+       <div class="container-fluid2">
+        <div class="col-md-8 block-collection-body">
+           <h3 class="block-collection-title">
+               A reflection of contemporary style and functionality
+           </h3>
+           <hr>
+           <div class="block-collection-text">
+               <p>
+                   The Galion range of wiring devices is a reflection of contemporary style and functionality designed to marry borderless design with quality and function. Crafted with excellence,it uses only the best quality components.
+               </p>
+           </div>
+           
+        </div>
+           
+           <div class="col-md-4 img-block" >
+               <img src="assets/images/wiring devices - push  (450 × 450 px) (450 × 300 px) (12).png" alt="">
+           
+           </div>
+       </div>
+       <div class="container-fluid2">
+        <div class="col-md-8 block-collection-body">
+           <h3 class="block-collection-title">
+               A reflection of contemporary style and functionality
+           </h3>
+           <hr>
+           <div class="block-collection-text">
+               <p>
+                   The Galion range of wiring devices is a reflection of contemporary style and functionality designed to marry borderless design with quality and function. Crafted with excellence,it uses only the best quality components.
+               </p>
+           </div>
+           
+        </div>
+           
+           <div class="col-md-4 img-block" >
+               <img src="assets/images/wiring devices - push  (450 × 450 px) (450 × 300 px) (12).png" alt="">
+           
+           </div>
+       </div>
+       <div class="container-fluid2">
+        <div class="col-md-8 block-collection-body">
+           <h3 class="block-collection-title">
+               A reflection of contemporary style and functionality
+           </h3>
+           <hr>
+           <div class="block-collection-text">
+               <p>
+                   The Galion range of wiring devices is a reflection of contemporary style and functionality designed to marry borderless design with quality and function. Crafted with excellence,it uses only the best quality components.
+               </p>
+           </div>
+           
+        </div>
+           
+           <div class="col-md-4 img-block" >
+               <img src="assets/images/wiring devices - push  (450 × 450 px) (450 × 300 px) (12).png" alt="">
+           
+           </div>
+       </div>
+       <div class="container-fluid2">
+        <div class="col-md-8 block-collection-body">
+           <h3 class="block-collection-title">
+               A reflection of contemporary style and functionality
+           </h3>
+           <hr>
+           <div class="block-collection-text">
+               <p>
+                   The Galion range of wiring devices is a reflection of contemporary style and functionality designed to marry borderless design with quality and function. Crafted with excellence,it uses only the best quality components.
+               </p>
+           </div>
+           
+        </div>
+           
+           <div class="col-md-4 img-block" >
+               <img src="assets/images/wiring devices - push  (450 × 450 px) (450 × 300 px) (12).png" alt="">
+           
+           </div>
+       </div>
+   </div>
+<div>
+    <h2 class="text-center mb-4"> THIẾT BỊ ĐÓNG CẮT</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+       
+        <div class="col-md-3 col-sm-6 mb-3">
+            <div class="card card1">
+
+                <a href="sanphamchitiet.html" class="card-img-top">
+                    <img src="assets/images/13.png" class="img-fluid" alt="...">
+                    <div class="card-title-overlay">Card title</div>
+                </a>
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+            <div class="card card1">
+
+                <a href="sanphamchitiet.html" class="card-img-top">
+                    <img src="assets/images/6.png" class="img-fluid" alt="...">
+                    <div class="card-title-overlay">Card title</div>
+                </a>
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+            <div class="card card1">
+
+                <a href="sanphamchitiet.html" class="card-img-top">
+                    <img src="assets/images/7.png" class="img-fluid" alt="...">
+                    <div class="card-title-overlay">Card title</div>
+                </a>
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+            <div class="card card1">
+
+                <a href="sanphamchitiet.html" class="card-img-top">
+                    <img src="assets/images/8.jpg" class="img-fluid" alt="...">
+                    <div class="card-title-overlay">Card title</div>
+                </a>
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="xemthem">
+    <a href="sanpham.html"><span>xem thêm</span></a>
+</div>
+</article>
+</div>
+
+</div>
+
+
+
+<footer class="footer" style="padding-top: 10px; padding-bottom: 0px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" id="p">
+              <div>
+                  <img class="footer-logo" src="https://legrandviet.vn/wp-content/uploads/2022/12/Logo_Legrand_SA.svg" alt="Legrand" height="40">
+               </div>
+                <p class="font" style="text-align: justify">Tại Việt Nam, KPS là đối tác phân phối chính thức của các hãng uy tín trên thế giới như Bosch (Đức), Unify (Siemens - Đức), Orion images (Mỹ), Tycon (Mỹ), CNB - iCanTek (Korea), Soltech (Korea), Legrand (Nhật Bản). Sự linh hoạt trong dây sản phẩm phân phối cùng như hợp tác chặt chẽ với các nhà sản xuất với hy vọng mang đến những giải pháp thoả mãn nhu cầu khách hàng ở mức cao nhất.</p>
+                <p class="font"><a href="#">Xem thêm</a></p>
+                <div class="social-icons font">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4" id="p" style=" width: 65%;">
+                <div class="section-title">THÔNG TIN LIÊN HỆ</div>
+                <div class="contact-info d-flex">
+                    <img src="assets/images/van-phong-ho-chi-minh-33779683.jpg" alt="Building Image">
+                    <address style="margin-left: 30px;">
+                        <strong>VĂN PHÒNG HỒ CHÍ MINH</strong><br><br>
+                        <div class="font"> <span class="icon_dc"></span>
+                    <p>    10-12 Đồng Văn Cống, phường Thạnh Mỹ Lợi, TP. Thủ Đức, TP. Hồ Chí Minh
+                  </p></div>
+                       <div class="font"> <span class="icon_dt"></span><p>+84 903 709 019 </p></div>
+                        
+
+                        <div class="font"><span class="icon_dh"></span><strong>GIỜ LÀM VIỆC</strong><br></div>
+                        <p class="font" style="padding-left: 5px;">
+                          Thứ Hai – Thứ Sáu: 8:00 SA - 17:30 CH<br>
+                          Thứ Bảy - Chủ Nhật: Ngày nghỉ</p>
+                      </address>
+                   
+                </div>
+            </div>
+            <!-- <div class="col-md-4">
+                <div class="section-title">QUY ĐỊNH & CHÍNH SÁCH</div>
+                <ul class="list-unstyled">
+                    <li><a href="#">Chính sách bảo hành, đổi trả</a></li>
+                    <li><a href="#">Giao hàng, thanh toán và góp ý</a></li>
+                    <li><a href="#">Giấy phép kinh doanh</a></li>
+                </ul>
+            </div> -->
+        </div>
+    </div>
+    <div class="footer-bottom" style="padding-top: 20px; padding-bottom: 6px;">
+        <div class="container">
+      
+        </div>
+    </div>
+</footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

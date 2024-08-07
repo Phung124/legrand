@@ -9,7 +9,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
    
+   
     <style>
+ 
+ 
+        .carousel-caption {
+            position: absolute;
+    bottom: 8.25rem;
+    top: 35%;
+    left:22%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
         header {
             background-color: #4A4A4A;
             color: #fff;
@@ -255,6 +270,8 @@ font-weight: 400;
         flex: 1 1 100%; /* Full width on small screens */
     }
 }
+/* */
+
     </style>
 </head>
 <body>
@@ -275,35 +292,38 @@ font-weight: 400;
                                 <a class="nav-link" href="gioithieu.html">GIỚI THIỆU</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="sanpham.html" id="navbarDropdown" role="button" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" aria-expanded="false">
                                     SẢN PHẨM
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <div class="dropdown-menu-columns">
                                         <div>
-                                            <h6 class="dropdown-header">Switches and sockets</h6>
-                                            <a class="dropdown-item" href="#">Mallia Senses™</a>
-                                            <a class="dropdown-item" href="#">Galion</a>
-                                            <a class="dropdown-item" href="#">Eloé</a>
-                                            <a class="dropdown-item" href="#">Belanko™ S</a>
-                                            <a class="dropdown-item" href="#">Rivia</a>
+                                           <a href="loaisp.html"> <h6 class="dropdown-header">Switches and sockets</h6></a>
+                                            <a class="dropdown-item" href="mota.html">Mallia Senses™</a>
+                                            <a class="dropdown-item" href="mota.html">Galion</a>
+                                            <a class="dropdown-item" href="mota.html">Eloé</a>
+                                            <a class="dropdown-item" href="mota.html">Belanko™ S</a>
+                                            <a class="dropdown-item" href="mota.html">Rivia</a>
                                         </div>
                                         <div>
-                                            <h6 class="dropdown-header">Smart Home</h6>
-                                            <a class="dropdown-item" href="#">Arteor™ with Netatmo</a>
-                                            <a class="dropdown-item" href="#">Mallia Senses™ with Netatmo</a>
-                                            <a class="dropdown-item" href="#">Living Now with Netatmo</a>
-                                            <a class="dropdown-item" href="#">Netatmo</a>
+                                            <a href="loaisp.html"><h6 class="dropdown-header">Smart Home</h6></a>
+                                            <a class="dropdown-item" href="mota.html">Arteor™ with Netatmo</a>
+                                            <a class="dropdown-item" href="mota.html">Mallia Senses™ with Netatmo</a>
+                                            <a class="dropdown-item" href="mota.html">Living Now with Netatmo</a>
+                                            <a class="dropdown-item" href="mota.html">Netatmo</a>
                                         </div>
                                         <div>
-                                            <h6 class="dropdown-header">Ups</h6>
-                                            <a class="dropdown-item" href="#">Single pa</a>
-                                            <a class="dropdown-item" href="#">Mallia Senses™ with Netatmo</a>
-                                            <a class="dropdown-item" href="#">Living Now with Netatmo</a>
-                                            <a class="dropdown-item" href="#">Netatmo</a>
+                                            <a href="loaisp.html"> <h6 class="dropdown-header">Ups</h6></a>
+                                            <a class="dropdown-item" href="mota.html">Single pa</a>
+                                            <a class="dropdown-item" href="mota.html">Mallia Senses™ with Netatmo</a>
+                                            <a class="dropdown-item" href="mota.html">Living Now with Netatmo</a>
+                                            <a class="dropdown-item" href="mota.html">Netatmo</a>
                                         </div>
                                     </div>
                                 </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="banggia.html">BẢNG GIÁ</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="tintuc.html">TIN TỨC</a>
@@ -324,40 +344,17 @@ font-weight: 400;
             </nav>
         </div>
         </header>
-     <!-- <header >
-        <div class="header_nav">
-            <div class="header_na">
-        <div class="logo">
-            <img src="https://legrandviet.vn/wp-content/uploads/2022/12/Logo_Legrand_SA.svg" alt="Logo">
-            
+
+    <div class="call-button">
+        <div class="icon">
+            <a href="tel:0396217522">
+            <img src="assets/images/phone.png" alt="Call">
+        </a>
         </div>
-        <nav>
-            <ul>
-              <li class="nav-item"><a class="nav-link" href="#">GIỚI THIỆU</a></li>
-                <li class="nav-item dropdown"><a  href="#">SẢN PHẨM</a>
-                    <div class="dropdown-content">
-                        <a href="#">Switches and sockets</a>
-                        <a href="#">Smart Home</a>
-                        <a href="#">UPS</a>
-                        <a href="#">Digital Infrastructure</a>
-                    </div>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#">TIN TỨC</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">CATALOGUE</a></li>
-                <li class="nav-item"><a  class="nav-link" href="#">LIÊN HỆ</a></li>
-            </ul>
-        </nav>
+        <div class="text">
+            <a href="tel:0396217522" style="color: #fff; text-decoration: none;">
+            <span>0396.217.522</span></a></div>
     </div>
-        <div class="search-cart">
-            <form action="" method="get" class="search_header" name="search_header-name" id="search_header-id">
-                <input type="text" name ="search" placeholder="bạn muốn tìm gì">
-                <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>  
-            </form>
-          
-          
-        </div>
-    </div>
-    </header>  -->
     <div class="social-sidebar">
         <a href="https://www.facebook.com/groups/511655014645450" target="_blank">
             <img src="assets/images/Facebook_f_logo_(2019).svg" alt="Facebook">
@@ -414,8 +411,8 @@ font-weight: 400;
     <div class="container">
         <div class="row">
             <div class="col-12" >
-                <h2 class="section-title">DANH MỤC SẢN PHẨM</h2>
-                <p class="section-description">Mời bạn cùng tham khảo danh mục sản phẩm bán chạy nhất của chúng tôi:</p>
+                <h2 class="section-title">DATACOM</h2>
+                <!-- <p class="section-description">Mời bạn cùng tham khảo danh mục sản phẩm bán chạy nhất của chúng tôi:</p> -->
             </div>
         </div>
         
@@ -427,7 +424,7 @@ font-weight: 400;
   
             <div class="col-md-3 col-sm-6 mb-3 slide-item">
               <div class="card" >
-                  <a href="sanpham.html" style="color: black; position: relative;">
+                  <a href="loaisp.html" style="color: black; position: relative;">
                 <img src="assets/images/cammera.jpg" class="card-img-top" alt="...">
                   <div class="card-img-overlay card-img-overlay-bottom nen "  >
                       <h5 class="card-title">Card title</h5>
@@ -443,7 +440,7 @@ font-weight: 400;
             </div>
             <div class="col-md-3 col-sm-6 mb-3 slide-item">
               <div class="card" >
-                  <a href="sanpham.html" style="color: black; position: relative;">
+                  <a href="loaisp.html" style="color: black; position: relative;">
                 <img src="assets/images/cammera.jpg" class="card-img-top" alt="...">
                   <div class="card-img-overlay card-img-overlay-bottom nen "  >
                       <h5 class="card-title">Card title</h5>
@@ -459,7 +456,7 @@ font-weight: 400;
             </div>
             <div class="col-md-3 col-sm-6 mb-3 slide-item">
               <div class="card" >
-                  <a href="sanpham.html" style="color: black; position: relative;">
+                  <a href="loaisp.html" style="color: black; position: relative;">
                 <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
                   <div class="card-img-overlay card-img-overlay-bottom nen "  >
                       <h5 class="card-title">Card title</h5>
@@ -475,7 +472,7 @@ font-weight: 400;
             </div>
             <div class="col-md-3 col-sm-6 mb-3 slide-item">
               <div class="card" >
-                  <a href="sanpham.html" style="color: black; position: relative;">
+                  <a href="loaisp.html" style="color: black; position: relative;">
                 <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
                   <div class="card-img-overlay card-img-overlay-bottom nen "  >
                       <h5 class="card-title">Card title</h5>
@@ -491,7 +488,7 @@ font-weight: 400;
             </div>
             <div class="col-md-3 col-sm-6 mb-3 slide-item">
               <div class="card" >
-                  <a href="sanpham.html" style="color: black; position: relative;">
+                  <a href="loaisp.html" style="color: black; position: relative;">
                 <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
                   <div class="card-img-overlay card-img-overlay-bottom nen "  >
                       <h5 class="card-title">Card title</h5>
@@ -505,54 +502,7 @@ font-weight: 400;
                   </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 mb-3 slide-item">
-              <div class="card" >
-                  <a href="sanpham.html" style="color: black; position: relative;">
-                <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
-                  <div class="card-img-overlay card-img-overlay-bottom nen "  >
-                      <h5 class="card-title">Card title</h5>
-      
-                    </div>
-                  </a>
-                  <div class="card-body">
-                  
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                   
-                  </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 mb-3 slide-item">
-              <div class="card" >
-                  <a href="sanpham.html" style="color: black; position: relative;">
-                <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
-                  <div class="card-img-overlay card-img-overlay-bottom nen "  >
-                      <h5 class="card-title">Card title</h5>
-      
-                    </div>
-                  </a>
-                  <div class="card-body">
-                  
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                   
-                  </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 mb-3 slide-item">
-              <div class="card" >
-                  <a href="sanpham.html" style="color: black; position: relative;">
-                <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
-                  <div class="card-img-overlay card-img-overlay-bottom nen "  >
-                      <h5 class="card-title">Card title</h5>
-      
-                    </div>
-                  </a>
-                  <div class="card-body">
-                  
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                   
-                  </div>
-                </div>
-            </div>
+         
           </div>
          
   
@@ -560,11 +510,113 @@ font-weight: 400;
 
     </div>
     <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12" >
+                    <h2 class="section-title">ĐIỆN</h2>
+                    <!-- <p class="section-description">Mời bạn cùng tham khảo danh mục sản phẩm bán chạy nhất của chúng tôi:</p> -->
+                </div>
+            </div>
+            
+        </div>
+        <div class="container text-center slider-container">
+            <button class="arrow left" onclick="prevSlide1()"><i class="fa-solid fa-circle-chevron-left"></i></button>
+            <button class="arrow right" onclick="nextSlide1()"><i class="fa-solid fa-circle-chevron-right"></i></button>
+              <div class="row slider-container-content1" style="transition: transform 0.9s ease 0.2s;" >
+      
+                <div class="col-md-3 col-sm-6 mb-3 slide-item1">
+                  <div class="card" >
+                      <a href="loaisp.html" style="color: black; position: relative;">
+                    <img src="assets/images/cammera.jpg" class="card-img-top" alt="...">
+                      <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                          <h5 class="card-title">Công tắc và ổ cắm</h5>
+          
+                        </div>
+                      </a>
+                      <div class="card-body">
+                      
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                       
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3 slide-item1">
+                  <div class="card" >
+                      <a href="loaisp.html" style="color: black; position: relative;">
+                    <img src="assets/images/cammera.jpg" class="card-img-top" alt="...">
+                      <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                          <h5 class="card-title">Card title</h5>
+          
+                        </div>
+                      </a>
+                      <div class="card-body">
+                      
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                       
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3 slide-item1">
+                  <div class="card" >
+                      <a href="loaisp.html" style="color: black; position: relative;">
+                    <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
+                      <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                          <h5 class="card-title">Card title</h5>
+          
+                        </div>
+                      </a>
+                      <div class="card-body">
+                      
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                       
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3 slide-item1">
+                  <div class="card" >
+                      <a href="loaisp.html" style="color: black; position: relative;">
+                    <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
+                      <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                          <h5 class="card-title">Card title</h5>
+          
+                        </div>
+                      </a>
+                      <div class="card-body">
+                      
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                       
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3 slide-item1">
+                  <div class="card" >
+                      <a href="loaisp.html" style="color: black; position: relative;">
+                    <img src="assets/images/cammera1.jpg" class="card-img-top" alt="...">
+                      <div class="card-img-overlay card-img-overlay-bottom nen "  >
+                          <h5 class="card-title">Card title</h5>
+          
+                        </div>
+                      </a>
+                      <div class="card-body">
+                      
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                       
+                      </div>
+                    </div>
+                </div>
+              
+              </div>
+             
+      
+            </div>
+    
+        </div>
+    <!-- <div>
       <div class="container">
           <div class="row">
               <div class="col-12" >
                   <h2 class="section-title">SẢN PHẨM NỔI BẬT</h2>
-                  <p class="section-description">Mời bạn cùng tham khảo danh mục sản phẩm bán chạy nhất của chúng tôi:</p>
+                
               </div>
           </div>
           
@@ -597,62 +649,8 @@ font-weight: 400;
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
-                        </div><div class="col-md-3 col-sm-6 mb-3">
-                            <div class="card">
-
-                                <a href="sanphamchitiet.html" class="card-img-top">
-                                    <img src="assets/images/dich-vu-bao-hanh-sua-chua14053064_270x215.jpg" class="img-fluid" alt="...">
-                                    <div class="card-title-overlay">Card title</div>
-                                </a>
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div><div class="col-md-3 col-sm-6 mb-3">
-                            <div class="card">
-
-                                <a href="sanphamchitiet.html" class="card-img-top">
-                                    <img src="assets/images/dich-vu-bao-hanh-sua-chua14053064_270x215.jpg" class="img-fluid" alt="...">
-                                    <div class="card-title-overlay">Card title</div>
-                                </a>
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div><div class="col-md-3 col-sm-6 mb-3">
-                            <div class="card">
-
-                                <a href="sanphamchitiet.html" class="card-img-top">
-                                    <img src="assets/images/dich-vu-bao-hanh-sua-chua14053064_270x215.jpg" class="img-fluid" alt="...">
-                                    <div class="card-title-overlay">Card title</div>
-                                </a>
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div><div class="col-md-3 col-sm-6 mb-3">
-                            <div class="card">
-
-                                <a href="sanphamchitiet.html" class="card-img-top">
-                                    <img src="assets/images/dich-vu-bao-hanh-sua-chua14053064_270x215.jpg" class="img-fluid" alt="...">
-                                    <div class="card-title-overlay">Card title</div>
-                                </a>
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div><div class="col-md-3 col-sm-6 mb-3">
-                            <div class="card">
-
-                                <a href="sanphamchitiet.html" class="card-img-top">
-                                    <img src="assets/images/dich-vu-bao-hanh-sua-chua14053064_270x215.jpg" class="img-fluid" alt="...">
-                                    <div class="card-title-overlay">Card title</div>
-                                </a>
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div><div class="col-md-3 col-sm-6 mb-3">
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-3">
                             <div class="card">
 
                                 <a href="sanphamchitiet.html" class="card-img-top">
@@ -664,6 +662,19 @@ font-weight: 400;
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-3 col-sm-6 mb-3">
+                            <div class="card">
+
+                                <a href="sanphamchitiet.html" class="card-img-top">
+                                    <img src="assets/images/dich-vu-bao-hanh-sua-chua14053064_270x215.jpg" class="img-fluid" alt="...">
+                                    <div class="card-title-overlay">Card title</div>
+                                </a>
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                       
                     </div>
                     <div class="textt">
                       <a href="sanpham.html"><p class="text-color">Xem thêm</p></a>
@@ -675,124 +686,38 @@ font-weight: 400;
         </div>
     </div>
         
-      </div>
+      </div> -->
       <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12" >
-                    <h2 class="section-title">SẢN PHẨM NỔI BẬT</h2>
-                    <p class="section-description">Mời bạn cùng tham khảo danh mục sản phẩm bán chạy nhất của chúng tôi:</p>
-                </div>
-            </div>
-            
-        </div>
-        <div class="container mt-4">
-          <div id="cardCarousel" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6 mb-3">
-                            <div class="card">
-
-                                <a href="sanphamchitiet.html" class="card-img-top">
-                                    <img src="assets/images/dich-vu-bao-hanh-sua-chua14053064_270x215.jpg" class="img-fluid" alt="...">
-                                    <div class="card-title-overlay">Card title</div>
-                                </a>
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 mb-3">
-                            <div class="card">
-
-                                <a href="sanphamchitiet.html" class="card-img-top">
-                                    <img src="assets/images/dich-vu-bao-hanh-sua-chua14053064_270x215.jpg" class="img-fluid" alt="...">
-                                    <div class="card-title-overlay">Card title</div>
-                                </a>
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div><div class="col-md-3 col-sm-6 mb-3">
-                            <div class="card">
-
-                                <a href="sanphamchitiet.html" class="card-img-top">
-                                    <img src="assets/images/dich-vu-bao-hanh-sua-chua14053064_270x215.jpg" class="img-fluid" alt="...">
-                                    <div class="card-title-overlay">Card title</div>
-                                </a>
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div><div class="col-md-3 col-sm-6 mb-3">
-                            <div class="card">
-
-                                <a href="sanphamchitiet.html" class="card-img-top">
-                                    <img src="assets/images/dich-vu-bao-hanh-sua-chua14053064_270x215.jpg" class="img-fluid" alt="...">
-                                    <div class="card-title-overlay">Card title</div>
-                                </a>
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div><div class="col-md-3 col-sm-6 mb-3">
-                            <div class="card">
-
-                                <a href="sanphamchitiet.html" class="card-img-top">
-                                    <img src="assets/images/dich-vu-bao-hanh-sua-chua14053064_270x215.jpg" class="img-fluid" alt="...">
-                                    <div class="card-title-overlay">Card title</div>
-                                </a>
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div><div class="col-md-3 col-sm-6 mb-3">
-                            <div class="card">
-
-                                <a href="sanphamchitiet.html" class="card-img-top">
-                                    <img src="assets/images/dich-vu-bao-hanh-sua-chua14053064_270x215.jpg" class="img-fluid" alt="...">
-                                    <div class="card-title-overlay">Card title</div>
-                                </a>
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div><div class="col-md-3 col-sm-6 mb-3">
-                            <div class="card">
-
-                                <a href="sanphamchitiet.html" class="card-img-top">
-                                    <img src="assets/images/dich-vu-bao-hanh-sua-chua14053064_270x215.jpg" class="img-fluid" alt="...">
-                                    <div class="card-title-overlay">Card title</div>
-                                </a>
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div><div class="col-md-3 col-sm-6 mb-3">
-                            <div class="card">
-
-                                <a href="sanphamchitiet.html" class="card-img-top">
-                                    <img src="assets/images/dich-vu-bao-hanh-sua-chua14053064_270x215.jpg" class="img-fluid" alt="...">
-                                    <div class="card-title-overlay">Card title</div>
-                                </a>
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
+        <div>
+            <section class="solutions">
+                <h2>OUR SOLUTIONS</h2>
+                <div class="solution-items">
+                    <div class="solution-item">
+                        <img src="assets/images/mining.png" alt="Mining">
+                        <div class="solution-overlay">
+                            <div class="solution-title">MINING</div>
+                            <a href="#" class="solution-link">VIEW →</a>
                         </div>
                     </div>
-                      <div class="textt">
-                        <a href="sanpham.html"><p class="text-color">Xem thêm</p></a>
-                      </div>
-                  </div>
-                 
-              </div>
-            
-          </div>
-      </div>
-          
+                    <div class="solution-item">
+                        <img src="assets/images/giai phap2.jpg" alt="Hotels">
+                        <div class="solution-overlay">
+                            <div class="solution-title">HOTELS</div>
+                            <a href="#" class="solution-link">VIEW →</a>
+                        </div>
+                    </div>
+                    <div class="solution-item">
+                        <img src="assets/images/giai phap3.jpg" alt="Offices">
+                        <div class="solution-overlay">
+                            <div class="solution-title">OFFICES</div>
+                            <a href="#" class="solution-link">VIEW →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </div>
         </div>
+        <div style="margin-bottom: 20px;">
         <div class="container">
             <div class="row">
                 <div class="col-12" >
@@ -802,118 +727,7 @@ font-weight: 400;
             </div>
           
         </div>
-        <!-- <div class="container mt-4 d">
-            <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                    
-                            <div class="col">
-                                <a href="tintucchitiet.html" class="card">
-                                
-                                    <img src="assets/images/tt.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card 1</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                
-                            </a>
-                            </div>
-                            
-                            <div class="col">
-                                <a href="tintucchitiet.html" class="card">
-                                
-                                    <img src="assets/images/tt1.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card 2</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                
-                            </a>
-                            </div>
-                            <div class="col">
-                                <a href="tintucchitiet.html" class="card">
-                                
-                                    <img src="assets/images/tt2.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card 3</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                
-                            </a>
-                            </div>
-                            <div class="col">
-                                <a href="tintucchitiet.html" class="card">
-                                
-                                    <img src="assets/images/tt6.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card 4</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                
-                            </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col">
-                                <a href="tintucchitiet.html" class="card">
-                                    <img src="assets/images/05849660_380x215.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card 5</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="tintucchitiet.html" class="card">
-                                    <img src="assets/images/78482253_380x215.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card 6</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="tintucchitiet.html" class="card">
-                                    <img src="assets/images/78482253_380x215.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card 6</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="tintucchitiet.html" class="card">
-                                    <img src="assets/images/11292826_380x215.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card 6</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </a>
-                            </div>
-                           
-                        </div>
-                    </div>
-                </div>-->
-                <!-- <button class="carousel-control-next"   type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" style="    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;"aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                
-                <button class="carousel-control-prev"  type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" style="    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button> 
-                
-             
-                
-              
-            </div>
-        </div>     -->
+        
         <div class="container mt-4">
             <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                 <div class="carousel-inner">
@@ -1009,12 +823,14 @@ font-weight: 400;
                 </button>
             </div>
         </div>
-        
+    </div>
      <footer class="footer" style="padding-top: 10px; padding-bottom: 0px;">
       <div class="container">
           <div class="row">
               <div class="col-md-4" id="p">
-                  <div class="section-title">VỀ CHÚNG TÔI</div>
+                <div>
+                    <img class="footer-logo" src="https://legrandviet.vn/wp-content/uploads/2022/12/Logo_Legrand_SA.svg" alt="Legrand" height="40">
+                 </div>
                   <p class="font" style="text-align: justify">Tại Việt Nam, KPS là đối tác phân phối chính thức của các hãng uy tín trên thế giới như Bosch (Đức), Unify (Siemens - Đức), Orion images (Mỹ), Tycon (Mỹ), CNB - iCanTek (Korea), Soltech (Korea), Legrand (Nhật Bản). Sự linh hoạt trong dây sản phẩm phân phối cùng như hợp tác chặt chẽ với các nhà sản xuất với hy vọng mang đến những giải pháp thoả mãn nhu cầu khách hàng ở mức cao nhất.</p>
                   <p class="font"><a href="#">Xem thêm</a></p>
                   <div class="social-icons font">
@@ -1029,13 +845,13 @@ font-weight: 400;
                       <img src="assets/images/van-phong-ho-chi-minh-33779683.jpg" alt="Building Image">
                       <address style="margin-left: 30px;">
                           <strong>VĂN PHÒNG HỒ CHÍ MINH</strong><br><br>
-                          <p class="font"> <span class="icon_dc"></span>
-                          10-12 Đồng Văn Cống, phường Thạnh Mỹ Lợi, TP. Thủ Đức, TP. Hồ Chí Minh
-                    </p>
-                         <p class="font"> <span class="icon_dt"></span> +84 903 709 019</p>
-                          <a href="mailto:kpshn@kps.com.vn"><p class="font" > <span class="icon_email"></span> kps@kps.com.vn</p></a>
+                          <div class="font"> <span class="icon_dc"></span>
+                      <p>    10-12 Đồng Văn Cống, phường Thạnh Mỹ Lợi, TP. Thủ Đức, TP. Hồ Chí Minh
+                    </p></div>
+                         <div class="font"> <span class="icon_dt"></span><p>+84 903 709 019 </p></div>
+                          
 
-                          <p class="font"><span class="icon_dh"></span><strong>GIỜ LÀM VIỆC</strong><br>
+                          <div class="font"><span class="icon_dh"></span><strong>GIỜ LÀM VIỆC</strong><br></div>
                           <p class="font" style="padding-left: 5px;">
                             Thứ Hai – Thứ Sáu: 8:00 SA - 17:30 CH<br>
                             Thứ Bảy - Chủ Nhật: Ngày nghỉ</p>
@@ -1055,7 +871,7 @@ font-weight: 400;
       </div>
       <div class="footer-bottom" style="padding-top: 20px; padding-bottom: 6px;">
           <div class="container">
-              <p>2010 © Bản quyền thuộc KPS</p>
+        
           </div>
       </div>
   </footer>

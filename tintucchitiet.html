@@ -5,14 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Layout</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/styles1.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
 
+   
     <style>
+ 
+ 
+        .carousel-caption {
+            position: absolute;
+    bottom: 8.25rem;
+    top: 35%;
+    left:22%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
         header {
             background-color: #4A4A4A;
             color: #fff;
@@ -258,6 +271,8 @@ font-weight: 400;
         flex: 1 1 100%; /* Full width on small screens */
     }
 }
+/* */
+
     </style>
 </head>
 <body>
@@ -278,33 +293,53 @@ font-weight: 400;
                                 <a class="nav-link" href="gioithieu.html">GIỚI THIỆU</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="sanpham.html" id="navbarDropdown" role="button" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" aria-expanded="false">
                                     SẢN PHẨM
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <div class="dropdown-menu-columns">
                                         <div>
-                                            <h6 class="dropdown-header">Switches and sockets</h6>
-                                            <a class="dropdown-item" href="#">Mallia Senses™</a>
-                                            <a class="dropdown-item" href="#">Galion</a>
-                                            <a class="dropdown-item" href="#">Eloé</a>
-                                            <a class="dropdown-item" href="#">Belanko™ S</a>
-                                            <a class="dropdown-item" href="#">Rivia</a>
+                                           <a href="loaisp.html"> <h6 class="dropdown-header">Switches and sockets</h6></a>
+                                            <a class="dropdown-item" href="mota.html">Mallia Senses™</a>
+                                            <a class="dropdown-item" href="mota.html">Galion</a>
+                                            <a class="dropdown-item" href="mota.html">Eloé</a>
+                                            <a class="dropdown-item" href="mota.html">Belanko™ S</a>
+                                            <a class="dropdown-item" href="mota.html">Rivia</a>
                                         </div>
                                         <div>
-                                            <h6 class="dropdown-header">Smart Home</h6>
-                                            <a class="dropdown-item" href="#">Arteor™ with Netatmo</a>
-                                            <a class="dropdown-item" href="#">Mallia Senses™ with Netatmo</a>
-                                            <a class="dropdown-item" href="#">Living Now with Netatmo</a>
-                                            <a class="dropdown-item" href="#">Netatmo</a>
+                                            <a href="loaisp.html"><h6 class="dropdown-header">Smart Home</h6></a>
+                                            <a class="dropdown-item" href="mota.html">Arteor™ with Netatmo</a>
+                                            <a class="dropdown-item" href="mota.html">Mallia Senses™ with Netatmo</a>
+                                            <a class="dropdown-item" href="mota.html">Living Now with Netatmo</a>
+                                            <a class="dropdown-item" href="mota.html">Netatmo</a>
                                         </div>
                                         <div>
-                                            <h6 class="dropdown-header">Ups</h6>
-                                            <a class="dropdown-item" href="#">Single pa</a>
-                                            <a class="dropdown-item" href="#">Mallia Senses™ with Netatmo</a>
-                                            <a class="dropdown-item" href="#">Living Now with Netatmo</a>
-                                            <a class="dropdown-item" href="#">Netatmo</a>
+                                            <a href="loaisp.html"> <h6 class="dropdown-header">Ups</h6></a>
+                                            <a class="dropdown-item" href="mota.html">Single pa</a>
+                                            <a class="dropdown-item" href="mota.html">Mallia Senses™ with Netatmo</a>
+                                            <a class="dropdown-item" href="mota.html">Living Now with Netatmo</a>
+                                            <a class="dropdown-item" href="mota.html">Netatmo</a>
                                         </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" aria-expanded="false">
+                                    BẢNG GIÁ
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <div class="dropdown-menu-columns">
+                                        <div>
+                                           
+                                            <a class="dropdown-item" href="banggia.html">Công tắt và ổ cấm</a>
+                                            <a class="dropdown-item" href="banggia.html">RCU</a>
+                                            <a class="dropdown-item" href="banggia.html"> Tủ rack</a>
+                                            <a class="dropdown-item" href="banggia.html">UPS</a>
+                                            <a class="dropdown-item" href="banggia.html">PDU</a>
+                                        </div>
+                                      
+                                        
                                     </div>
                                 </div>
                             </li>
@@ -327,6 +362,17 @@ font-weight: 400;
             </nav>
         </div>
         </header>
+
+    <div class="call-button">
+        <div class="icon">
+            <a href="tel:0396217522">
+            <img src="assets/images/phone.png" alt="Call">
+        </a>
+        </div>
+        <div class="text">
+            <a href="tel:0396217522" style="color: #fff; text-decoration: none;">
+            <span>0396.217.522</span></a></div>
+    </div>
         <div class="social-sidebar">
             <a href="https://www.facebook.com/groups/511655014645450" target="_blank">
                 <img src="assets/images/Facebook_f_logo_(2019).svg" alt="Facebook">
@@ -454,55 +500,57 @@ font-weight: 400;
         </ul>
     </nav>
 </div>
-     <footer class="footer" style="padding-top: 10px; padding-bottom: 0px;">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-4" id="p">
-                  <div class="section-title">VỀ CHÚNG TÔI</div>
-                  <p class="font" style="text-align: justify">Tại Việt Nam, KPS là đối tác phân phối chính thức của các hãng uy tín trên thế giới như Bosch (Đức), Unify (Siemens - Đức), Orion images (Mỹ), Tycon (Mỹ), CNB - iCanTek (Korea), Soltech (Korea), Legrand (Nhật Bản). Sự linh hoạt trong dây sản phẩm phân phối cùng như hợp tác chặt chẽ với các nhà sản xuất với hy vọng mang đến những giải pháp thoả mãn nhu cầu khách hàng ở mức cao nhất.</p>
-                  <p class="font"><a href="#">Xem thêm</a></p>
-                  <div class="social-icons font">
-                      <a href="#"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
-                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  </div>
-              </div>
-              <div class="col-md-4" id="p" style=" width: 65%;">
-                  <div class="section-title">THÔNG TIN LIÊN HỆ</div>
-                  <div class="contact-info d-flex">
-                      <img src="assets/images/van-phong-ho-chi-minh-33779683.jpg" alt="Building Image">
-                      <address style="margin-left: 30px;">
-                          <strong>VĂN PHÒNG HỒ CHÍ MINH</strong><br><br>
-                          <p class="font"> <span class="icon_dc"></span>
-                          10-12 Đồng Văn Cống, phường Thạnh Mỹ Lợi, TP. Thủ Đức, TP. Hồ Chí Minh
-                    </p>
-                         <p class="font"> <span class="icon_dt"></span> +84 903 709 019</p>
-                          <a href="mailto:kpshn@kps.com.vn"><p class="font" > <span class="icon_email"></span> kps@kps.com.vn</p></a>
+<footer class="footer" style="padding-top: 10px; padding-bottom: 0px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" id="p">
+              <div>
+                  <img class="footer-logo" src="https://legrandviet.vn/wp-content/uploads/2022/12/Logo_Legrand_SA.svg" alt="Legrand" height="40">
+               </div>
+                <p class="font" style="text-align: justify">Tại Việt Nam, KPS là đối tác phân phối chính thức của các hãng uy tín trên thế giới như Bosch (Đức), Unify (Siemens - Đức), Orion images (Mỹ), Tycon (Mỹ), CNB - iCanTek (Korea), Soltech (Korea), Legrand (Nhật Bản). Sự linh hoạt trong dây sản phẩm phân phối cùng như hợp tác chặt chẽ với các nhà sản xuất với hy vọng mang đến những giải pháp thoả mãn nhu cầu khách hàng ở mức cao nhất.</p>
+                <p class="font"><a href="#">Xem thêm</a></p>
+                <div class="social-icons font">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4" id="p" style=" width: 65%;">
+                <div class="section-title">THÔNG TIN LIÊN HỆ</div>
+                <div class="contact-info d-flex">
+                    <img src="assets/images/van-phong-ho-chi-minh-33779683.jpg" alt="Building Image">
+                    <address style="margin-left: 30px;">
+                        <strong>VĂN PHÒNG HỒ CHÍ MINH</strong><br><br>
+                        <div class="font"> <span class="icon_dc"></span>
+                    <p>    10-12 Đồng Văn Cống, phường Thạnh Mỹ Lợi, TP. Thủ Đức, TP. Hồ Chí Minh
+                  </p></div>
+                       <div class="font"> <span class="icon_dt"></span><p>+84 903 709 019 </p></div>
+                        
 
-                          <p class="font"><span class="icon_dh"></span><strong>GIỜ LÀM VIỆC</strong><br>
-                          <p class="font" style="padding-left: 5px;">
-                            Thứ Hai – Thứ Sáu: 8:00 SA - 17:30 CH<br>
-                            Thứ Bảy - Chủ Nhật: Ngày nghỉ</p>
-                        </address>
-                     
-                  </div>
-              </div>
-              <!-- <div class="col-md-4">
-                  <div class="section-title">QUY ĐỊNH & CHÍNH SÁCH</div>
-                  <ul class="list-unstyled">
-                      <li><a href="#">Chính sách bảo hành, đổi trả</a></li>
-                      <li><a href="#">Giao hàng, thanh toán và góp ý</a></li>
-                      <li><a href="#">Giấy phép kinh doanh</a></li>
-                  </ul>
-              </div> -->
-          </div>
-      </div>
-      <div class="footer-bottom" style="padding-top: 20px; padding-bottom: 6px;">
-          <div class="container">
-              <p>2010 © Bản quyền thuộc KPS</p>
-          </div>
-      </div>
-  </footer>
+                        <div class="font"><span class="icon_dh"></span><strong>GIỜ LÀM VIỆC</strong><br></div>
+                        <p class="font" style="padding-left: 5px;">
+                          Thứ Hai – Thứ Sáu: 8:00 SA - 17:30 CH<br>
+                          Thứ Bảy - Chủ Nhật: Ngày nghỉ</p>
+                      </address>
+                   
+                </div>
+            </div>
+            <!-- <div class="col-md-4">
+                <div class="section-title">QUY ĐỊNH & CHÍNH SÁCH</div>
+                <ul class="list-unstyled">
+                    <li><a href="#">Chính sách bảo hành, đổi trả</a></li>
+                    <li><a href="#">Giao hàng, thanh toán và góp ý</a></li>
+                    <li><a href="#">Giấy phép kinh doanh</a></li>
+                </ul>
+            </div> -->
+        </div>
+    </div>
+    <div class="footer-bottom" style="padding-top: 20px; padding-bottom: 6px;">
+        <div class="container">
+      
+        </div>
+    </div>
+</footer>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

@@ -1,34 +1,63 @@
 let currentSlide = 0;
+    const slidesPerView = 4;
 
-function showSlide(index) {
-    const slides = document.querySelectorAll('.slide-item');
-    const totalSlides = slides.length;
-    const slidesPerView = 4; // Number of slides to show at once
+    function showSlide(index) {
+        const slides = document.querySelectorAll('.slide-item');
+        const totalSlides = slides.length;
 
-    if (index >= totalSlides / slidesPerView) {
-        currentSlide = 0;
-    } else if (index < 0) {
-        currentSlide = Math.ceil(totalSlides / slidesPerView) - 1;
-    } else {
-        currentSlide = index;
+        if (index >= totalSlides) {
+            currentSlide = 0;
+        } else if (index < 0) {
+            currentSlide = totalSlides - 4;
+        } else {
+            currentSlide = index;
+        }
+
+        const newTransform = `translateX(-${currentSlide * (100 / slidesPerView)}%)`;
+        document.querySelector('.slider-container-content').style.transform = newTransform;
     }
 
-    const newTransform = `translateX(-${currentSlide * 100}%)`;
-    document.querySelector('.slider-container-content').style.transform = newTransform;
-}
+    function nextSlide() {
+        showSlide(currentSlide + 4);
+    }
 
-function nextSlide() {
-    showSlide(currentSlide + 1);
-}
+    function prevSlide() {
+        showSlide(currentSlide - 4);
+    }
 
-function prevSlide() {
-    showSlide(currentSlide - 1);
-}
+    document.addEventListener('DOMContentLoaded', () => {
+        showSlide(currentSlide);
+    });
 
-document.addEventListener('DOMContentLoaded', () => {
-    showSlide(currentSlide);
-});
+    let currentSlide1 = 0;
 
+    function showSlide1(index) {
+        const slides = document.querySelectorAll('.slide-item1');
+        const totalSlides = slides.length;
+
+        if (index >= totalSlides) {
+            currentSlide1 = 0;
+        } else if (index < 0) {
+            currentSlide1 = totalSlides - 1;
+        } else {
+            currentSlide1 = index;
+        }
+
+        const newTransform = `translateX(-${currentSlide1 * (100 / slidesPerView)}%)`;
+        document.querySelector('.slider-container-content1').style.transform = newTransform;
+    }
+
+    function nextSlide1() {
+        showSlide1(currentSlide1 + 1);
+    }
+
+    function prevSlide1() {
+        showSlide1(currentSlide1 - 1);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        showSlide1(currentSlide1);
+    });
 // back-to-top
 window.addEventListener('scroll', function() {
     const backToTopButton = document.getElementById('back-to-top');
