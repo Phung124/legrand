@@ -137,6 +137,7 @@ nav ul li a {
     text-align: center;
     position: relative;
     margin: 30px 0;
+    font-size: 2em;
     font-weight: 500;
 }
 /* .section-title::before,
@@ -244,6 +245,7 @@ width: 50%;
     margin-bottom: 20px;
     color: #fff;
     text-align: justify;
+    font-size: 18px;
 }
 
 .footer .contact-info img {
