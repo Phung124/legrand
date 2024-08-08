@@ -11,268 +11,287 @@
 
    
     <style>
- 
- 
-        .carousel-caption {
-            position: absolute;
-    bottom: 8.25rem;
-    top: 35%;
-    left:22%;
-    transform: translateX(-50%);
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-        header {
-            background-color: #4A4A4A;
-            color: #fff;
-            z-index: 2;
-            box-shadow: 0 -5px 20px 10px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            top: 0;
-            right: 0;
-            left: 0;
+         .navbar-toggler{
+            background-color: #a8b3be;
         }
-        .navbar-custom {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-           min-height: 80px;
-            width: 100%;
-            margin: 0px auto;
-            padding: 0 15px;
-            background-color: #4A4A4A;
+        .nav-link:focus{
+           color: #fff;
         }
-        /* .dropdown-item:hover {
-    color: #ff0000;
-} */
-        .search-bar {
-            display: flex;
-            align-items: center;
-            background-color: #ffffff;
-            border-radius: 2px;
-            padding: 1px;
-            justify-content: space-between;
-        }
-        .search-bar input {
-            border: none;
-            outline: none;
-            width: 180px;
-        }
-        .search-bar button {
-            border: none;
-            background: none;
-            color: #4f4f4f;
-            cursor: pointer;
-        }
-        .nav-item.dropdown:hover .dropdown-menu {
-            display: block;
-            margin-top: 0;
-        }
-        .dropdown-menu-columns {
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-            padding: 1rem;
-        }
+        body {
+         
+         font-family: 'Open Sans', system-ui;
+         margin: 0;
+         padding: 0;
+       }
        
-        .btn-submit {
-    background-color: #69a89a;
-    border: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-.btn-submit:hover {
-    background-color: #507d70;
-}
-        /* Liên hệ */
-        .search-form {
-   background-color: #e8e8e8;
-   padding: 20px;
-   border-radius: 5px;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   margin-bottom: 10px;
-}
-
-.search-form input,
-.search-form select,
-.search-form button {
-   width: 100%;
-   padding: 10px;
-   margin-bottom: 10px;
-   border: 1px solid #ccc;
-   border-radius: 5px;
-   box-sizing: border-box;
-   font-size: 16px;
-}
-
-.search-form button {
-   background-color: #fff;
-   color: #333;
-   cursor: pointer;
-   border: 1px solid #ccc;
-}
-
-.search-form button:hover {
-   background-color: #ddd;
-}
-       .row-limit {
-           max-height: 1300px; /* Adjust according to the approximate height of 4 rows */
-           overflow: hidden;
-       }
-   .breadcrumb-item a{
-   text-decoration: none;
-   color: #666565;
-   }
-
-   .page-link:hover {
-   background-color: #666565;
-   color:red;
-}
-   .page-link{
-       padding-top: 0px;
-       color: black;
-   }
-/* Change the arrow color to red */
- .col-md-3{
-   margin-bottom: 20px;
- }
- .hidden {
- display: none;
-}
-.col{
-margin-bottom: 1rem;
-flex: 1 0 25% ;
-
-}
- 
- .bg-light{
-   background-color: #215F8B;
- }
- .card-img-top {
-           max-width: 100%;
-         text-align: center;
-           object-fit: contain; 
-           transition: transform 0.9s ease;
-       }
-
-.card-img-top:hover{
-   transform: scale(1.1);
-}
- .card-img-overlay-bottom {
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     top: auto;
-     padding: 10px;
-     width: 100%;
-   height: 50px;
-   background-color: rgba(255, 255, 255, 0.7);
-   border-radius: 0 0 0 0;
- }
- .card {
-           position: relative;
-           margin: 0 auto;
-           overflow: hidden;
-           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-       }
-       .slider-container-content {
-   display: flex;
-   flex-wrap: nowrap;
-   transition: transform 0.5s ease;
-}
-.slider-container-content1 {
-   display: flex;
-   flex-wrap: nowrap;
-   transition: transform 0.5s ease;
-}
-      
-       @media only screen and (max-width: 768px) {
-   .slide1 {
-       flex: 1 1 100%; /* 2 products in a row */
-   }
- }
- .card-title-overlay {
-           position: absolute;
-           bottom: 0;
-           width: 100%;
-           background: rgba(0, 0, 0, 0.5);
-           color: white;
-           padding: 10px;
+               .carousel-caption {
+                   position: absolute;
+           bottom: 8.25rem;
+           top: 35%;
+           left:22%;
+           transform: translateX(-50%);
+           color: #ffffff;
            text-align: center;
+           padding: 10px;
+           margin-left: auto;
+           margin-right: auto;
        }
-       .card-img-top {
-           position: relative;
+               header {
+                   background-color: #2e2b2b;
+                   color: #fff;
+                   z-index: 2;
+                   box-shadow: 0 -5px 20px 10px rgba(0, 0, 0, 0.1);
+                   position: fixed;
+                   top: 0;
+                   right: 0;
+                   left: 0;
+               }
+               .navbar-custom {
+                   display: flex;
+                   justify-content: space-between;
+                   align-items: center;
+                  min-height: 80px;
+                   width: 100%;
+                   margin: 0px auto;
+                   padding: 0 15px;
+                   background-color: #2e2b2b;
+               }
+               /* .dropdown-item:hover {
+           color: #ff0000;
+       } */
+               .search-bar {
+                   display: flex;
+                   align-items: center;
+                   background-color: #ffffff;
+                   border-radius: 2px;
+                   padding: 1px;
+                   justify-content: space-between;
+               }
+               .search-bar input {
+                   border: none;
+                   outline: none;
+                   width: 180px;
+               }
+               .search-bar button {
+                   border: none;
+                   background: none;
+                   color: #4f4f4f;
+                   cursor: pointer;
+               }
+               .nav-item.dropdown:hover .dropdown-menu {
+                   display: block;
+                   margin-top: 0;
+               }
+               .dropdown-menu-columns {
+                   display: flex;
+                   flex-direction: row;
+                   gap: 20px;
+                   padding: 1rem;
+               }
+              
+               .btn-submit {
+           background-color: #69a89a;
+           border: none;
+           color: white;
+           font-weight: bold;
+           padding: 10px 20px;
+           border-radius: 5px;
+           transition: background-color 0.3s ease;
        }
-       .carousel-control-prev, .carousel-control-next {
-           opacity: 0;
-           transition: opacity 0.5s;
+       .btn-submit:hover {
+           background-color: #507d70;
        }
-       #cardCarousel:hover .carousel-control-prev,
-       #cardCarousel:hover .carousel-control-next {
-           opacity: 1;
+               /* Liên hệ */
+               .search-form {
+          background-color: #e8e8e8;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          margin-bottom: 10px;
        }
-       .carousel-control-prev {
-           position: absolute;
-           left: -5%;
+       
+       .search-form input,
+       .search-form select,
+       .search-form button {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-sizing: border-box;
+          font-size: 16px;
        }
-       .carousel-control-next {
-           position: absolute;
-           right: -5%;
+       
+       .search-form button {
+          background-color: #fff;
+          color: #333;
+          cursor: pointer;
+          border: 1px solid #ccc;
        }
-/* tin tức  */
-.news-item {
-           display: flex;
-           margin-bottom: 1.5rem;
+       
+       .search-form button:hover {
+          background-color: #ddd;
        }
-       .news-item img {
-           width: 130px;
-   height: 120px;
-   margin-right: 1rem;
-   border-radius: 8px
+              .row-limit {
+                  max-height: 1300px; /* Adjust according to the approximate height of 4 rows */
+                  overflow: hidden;
+              }
+          .breadcrumb-item a{
+          text-decoration: none;
+          color: #666565;
+          }
+       
+          .page-link:hover {
+          background-color: #666565;
+          color:red;
        }
-       .sidebar .news-item {
-           margin-bottom: 1rem;
+          .page-link{
+              padding-top: 0px;
+              color: black;
+          }
+       /* Change the arrow color to red */
+        .col-md-3{
+          margin-bottom: 20px;
+        }
+        .hidden {
+        display: none;
        }
-       .sidebar .news-item {
-           display: flex;
-           align-items: center;
+       .col{
+       margin-bottom: 1rem;
+       flex: 1 0 25% ;
+       
        }
-       .sidebar .news-item img {
-           width: 50px;
-           height: 40px;
-           margin-right: 0.5rem;
+        
+        .bg-light{
+          background-color: #215F8B;
+        }
+        .card-img-top {
+                max-width: 100%;
+                text-align: center;
+                  object-fit:cover; 
+                  transition: transform 0.9s ease;
+                 
+              }
+             .slider-container .card-img-top {
+                max-width: 100%;
+                height: 200px;
+                text-align: center;
+               object-fit:cover; 
+                  transition: transform 0.9s ease;
+              }
+       
+       .card-img-top:hover{
+          transform: scale(1.1);
        }
-      .news-item p{
-font-size: 0.9rem;
-font-weight: 400;
-      }
-      .fixed{
-       position: fixed;
-           top: 20px;
-           right: 10px;
-           display: flex;
-           flex-direction: column;
-      }
-      .sidebar-wrapper {
-   position: sticky;
-   top: 150px; /* Bắt đầu ngay dưới header */
-   bottom: 100px;
-}
-@media (max-width: 600px) {
-    .card {
-        flex: 1 1 100%; /* Full width on small screens */
-    }
-}
-/* */
-
-    </style>
+        .card-img-overlay-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: auto;
+            padding: 10px;
+            width: 100%;
+          height: 50px;
+          background-color: rgba(255, 255, 255, 0.7);
+          border-radius: 0 0 0 0;
+        }
+        .card {
+                  position: relative;
+                  margin: 0 auto;
+                  overflow: hidden;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+              }
+              .slider-container-content {
+          display: flex;
+          flex-wrap: nowrap;
+          transition: transform 0.5s ease;
+       }
+       .slider-container-content1 {
+          display: flex;
+          flex-wrap: nowrap;
+          transition: transform 0.5s ease;
+       }
+             
+              @media only screen and (max-width: 768px) {
+          .slide1 {
+              flex: 1 1 100%; /* 2 products in a row */
+          }
+        }
+        .card-title-overlay {
+                  position: absolute;
+                  bottom: 0;
+                  width: 100%;
+                  background: rgba(0, 0, 0, 0.5);
+                  color: white;
+                  padding: 10px;
+                  text-align: center;
+              }
+              .card-img-top {
+                  position: relative;
+              }
+              .carousel-control-prev, .carousel-control-next {
+                  opacity: 0;
+                  transition: opacity 0.5s;
+              }
+              #cardCarousel:hover .carousel-control-prev,
+              #cardCarousel:hover .carousel-control-next {
+                  opacity: 1;
+              }
+              .carousel-control-prev {
+                  position: absolute;
+                  left: -5%;
+              }
+              .carousel-control-next {
+                  position: absolute;
+                  right: -5%;
+              }
+       /* tin tức  */
+       .news-item {
+                  display: flex;
+                  margin-bottom: 1.5rem;
+              }
+              .news-item img {
+                  width: 130px;
+          height: 120px;
+          margin-right: 1rem;
+          border-radius: 8px
+              }
+              .sidebar .news-item {
+                  margin-bottom: 1rem;
+              }
+              .sidebar .news-item {
+                  display: flex;
+                  align-items: center;
+              }
+              .sidebar .news-item img {
+                  width: 50px;
+                  height: 40px;
+                  margin-right: 0.5rem;
+              }
+             .news-item p{
+       font-size: 0.9rem;
+       font-weight: 400;
+             }
+             .fixed{
+              position: fixed;
+                  top: 20px;
+                  right: 10px;
+                  display: flex;
+                  flex-direction: column;
+             }
+             .sidebar-wrapper {
+          position: sticky;
+          top: 150px; /* Bắt đầu ngay dưới header */
+          bottom: 100px;
+       }
+       @media (max-width: 600px) {
+           .card {
+               flex: 1 1 100%; /* Full width on small screens */
+           }
+       }
+       /* */
+       
+           </style>
 </head>
 <body>
    
@@ -371,22 +390,20 @@ font-weight: 400;
             <a href="tel:0396217522" style="color: #fff; text-decoration: none;">
             <span>0396.217.522</span></a></div>
     </div>
-        <div class="social-sidebar">
-            <a href="https://www.facebook.com/groups/511655014645450" target="_blank">
-                <img src="assets/images/Facebook_f_logo_(2019).svg" alt="Facebook">
-            </a>
-            <a href="https://x.com/legrandkps " target="_blank">
-                <img src="assets/images/new-2023-twitter-logo-x-icon-design_1017-45418.avif" alt="Twitter">
-                
-            </a>
-            <a href="https://www.instagram.com/legrand_kps/" target="_blank">
-                <img src="assets/images/Instagram_icon.png" alt="Instagram">
-            </a>
-            <a href="https://www.linkedin.com/in/legrand-authorized-distributor-kps-9b310731b/" target="_blank">
-                <img src="assets/images/LinkedIn_logo_initials.png" alt="LinkedIn">
-            </a>
-           
-        </div>
+    <div class="social-sidebar">
+        <a href="https://www.facebook.com/groups/511655014645450" target="_blank" class="icon fb">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://x.com/legrandkps" target="_blank" class="icon tw">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/legrand_kps/" target="_blank" class="icon ig">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/legrand-authorized-distributor-kps-9b310731b/" target="_blank" class="icon li">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
   <div id="back-to-top" class="hidden">
     <i class="fa-solid fa-chevron-up"></i>
 </div>
@@ -615,8 +632,8 @@ font-weight: 400;
               <div>
                   <img class="footer-logo" src="https://legrandviet.vn/wp-content/uploads/2022/12/Logo_Legrand_SA.svg" alt="Legrand" height="40">
                </div>
-                <p class="font" style="text-align: justify">Tại Việt Nam, KPS là đối tác phân phối chính thức của các hãng uy tín trên thế giới như Bosch (Đức), Unify (Siemens - Đức), Orion images (Mỹ), Tycon (Mỹ), CNB - iCanTek (Korea), Soltech (Korea), Legrand (Nhật Bản). Sự linh hoạt trong dây sản phẩm phân phối cùng như hợp tác chặt chẽ với các nhà sản xuất với hy vọng mang đến những giải pháp thoả mãn nhu cầu khách hàng ở mức cao nhất.</p>
-                <p class="font"><a href="#">Xem thêm</a></p>
+               <p class="font" style="text-align: justify">Có mặt tại Việt Nam từ những năm 1994, với văn phòng đại diện tại thành phố Hồ Chí Minh và thủ đô Hà Nội, nhà máy thiết kế và sản xuất các loại tủ rack, tủ viễn thông. Legrand tham gia vào rất nhiều dự án có quy mô lớn trên khắp cả nước, được khách hàng biết đến không chỉ đa dạng về các mẫu mã sản phẩm cao cấp, chất lượng mà còn mang đến những giải pháp thông minh cho cuộc sống tiện nghi.</p>
+               <p class="font"><a href="gioithieu.html">Xem thêm</a></p>
                 <div class="social-icons font">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
